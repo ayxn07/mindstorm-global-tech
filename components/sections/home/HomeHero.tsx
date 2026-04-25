@@ -95,7 +95,7 @@ export default function HomeHero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[var(--color-ms-black)]"
       />
 
-      <div className="section-pad-x content-cap relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(520px,720px)] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_minmax(680px,920px)] xl:gap-12 2xl:grid-cols-[minmax(0,1fr)_minmax(820px,1120px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1fr)_minmax(900px,1280px)] 4xl:grid-cols-[minmax(0,1fr)_minmax(1100px,1500px)] min-h-[calc(100svh-6rem)]">
+      <div className="section-pad-x relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(520px,720px)] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_minmax(640px,860px)] xl:gap-12 2xl:grid-cols-[minmax(0,1fr)_minmax(720px,980px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1fr)_minmax(820px,1120px)] 4xl:grid-cols-[minmax(0,1fr)_minmax(960px,1320px)] min-h-[calc(100svh-6rem)]">
         <div className="flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -151,7 +151,7 @@ export default function HomeHero() {
             to={{ opacity: 1, y: 0 }}
             ease="power3.out"
             textAlign="left"
-            className="text-display mt-6 max-w-[30ch] font-heading font-semibold uppercase tracking-[0.015em] text-white"
+            className="text-display mt-6 max-w-[18ch] font-heading font-semibold uppercase tracking-[0.015em] text-white [overflow-wrap:break-word] [word-break:break-word]"
           />
 
           <motion.p
