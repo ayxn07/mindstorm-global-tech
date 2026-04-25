@@ -396,7 +396,11 @@ export default function MobileMenu({ open, onClose }: Props) {
                     {site.phoneDisplay}
                   </p>
                   <p>{site.email}</p>
-                  <p className="text-white/45">{site.address.full}</p>
+                  {site.offices.map((office) => (
+                    <p key={office.label} className="text-white/45">
+                      <span className="text-white/65">{office.label}:</span> {office.full}
+                    </p>
+                  ))}
                 </div>
               </motion.div>
             </motion.div>

@@ -75,10 +75,17 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="text-body-fluid mt-5 flex flex-col gap-3 text-white/70">
-              <li className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-ms-gold)]" />
-                <span>{site.address.full}</span>
-              </li>
+              {site.offices.map((office) => (
+                <li key={office.label} className="flex items-start gap-3">
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-ms-gold)]" />
+                  <span>
+                    <span className="block font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.18em] text-white/85">
+                      {office.label}
+                    </span>
+                    <span className="block">{office.full}</span>
+                  </span>
+                </li>
+              ))}
               <li>
                 <a
                   href={`mailto:${site.email}`}
