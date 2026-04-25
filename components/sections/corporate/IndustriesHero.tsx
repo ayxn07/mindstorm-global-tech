@@ -95,7 +95,7 @@ export default function IndustriesHero() {
 
             <h1
               id="industries-hero-heading"
-              className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-display"
+              className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white"
             >
               Technology That Works
               <br className="hidden md:block" />{" "}

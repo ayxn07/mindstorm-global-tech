@@ -73,33 +73,13 @@ export const pages: Record<string, PageMeta> = {
   },
 };
 
-export const whyChooseUsReasons = [
-  "End-to-End IT Solutions",
-  "Expertise in Networking & Cybersecurity",
-  "Custom Business Solutions",
-  "Competitive Pricing",
-  "Strong Technical Support",
-  "Scalable Implementation",
-  "Security-Focused Approach",
-  "Business-Oriented Technology Planning",
-];
-
 export const homeStats = [
   { value: 7, suffix: "+", label: "Service Lines" },
   { value: 24, suffix: "×7", label: "Support Positioning" },
   { value: 100, suffix: "%", label: "Client-First Delivery" },
 ];
 
-export const homeWhyBullets = [
-  "One-stop IT solution provider",
-  "Hardware + software + security integration",
-  "CCNA-level network engineering",
-  "Scalable and future-ready systems",
-  "Dedicated technical support",
-  "Secure implementation approach",
-];
-
-export type HomeWhyBentoItem = {
+type HomeWhyBentoItem = {
   title: string;
   body: string;
   icon: LucideIcon;
@@ -143,17 +123,6 @@ export const homeWhyBentoItems: HomeWhyBentoItem[] = [
     body: "Capacity headroom and modular architecture sized for the load you'll have in 24 months.",
     size: "md",
   },
-];
-
-export const technologyTiles = [
-  { title: "Cloud Systems", description: "Scalable cloud infrastructure" },
-  { title: "Secure Networks", description: "CCNA-grade networking" },
-  { title: "Business Applications", description: "CRM, ERP, SaaS" },
-  { title: "Endpoint Protection", description: "EDR + device policy" },
-  { title: "Infrastructure Support", description: "AMC + 24×7 monitoring" },
-  { title: "HR Platforms", description: "HRMS, payroll, attendance" },
-  { title: "LMS Platforms", description: "Campus + training LMS" },
-  { title: "Data Backup", description: "Encrypted backup + DR" },
 ];
 
 export const homeIndustries = [

@@ -56,7 +56,7 @@ export default function ProcessHero() {
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 0.9, 0.3, 1] }}
-            className="mt-8 max-w-5xl font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-display"
+            className="mt-8 max-w-5xl font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white"
           >
             From Brief to Production —{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">

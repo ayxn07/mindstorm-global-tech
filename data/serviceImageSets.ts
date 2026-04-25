@@ -3,7 +3,7 @@ const u = (id: string, w = 1400, q = 80) =>
 
 // Each service gets a unique trail of 8–10 images that match its content.
 // Used by ImageTrail variant 2 in each individual service hero.
-export const serviceImageSets: Record<string, string[]> = {
+const serviceImageSets: Record<string, string[]> = {
   "software-development": [
     u("1517694712202-14dd9538aa97"), // code on monitor
     u("1555066931-4365d14bab8c"), // multi-screen code

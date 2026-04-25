@@ -1,4 +1,4 @@
-import type { CompanyInfo, CTA } from "@/types/site";
+import type { CompanyInfo } from "@/types/site";
 
 export const site: CompanyInfo = {
   name: "Mindstorm Global Consulting Services",
@@ -26,12 +26,6 @@ export const legal = {
   cin: "",
   tagline: "Technology. Network. Security. Scale.",
 };
-
-export const globalCTA = {
-  primary: { label: "Get Free Consultation", href: "/contact" } satisfies CTA,
-  secondary: { label: "Explore Our Services", href: "/#services" } satisfies CTA,
-  tertiary: { label: "Talk to a Technology Expert", href: "/contact" } satisfies CTA,
-} as const;
 
 export const contactServices = [
   "Software Development",

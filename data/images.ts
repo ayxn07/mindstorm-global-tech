@@ -67,22 +67,3 @@ export const images = {
 } as const satisfies Record<string, ImageAsset>;
 
 export type ImageKey = keyof typeof images;
-
-export const perspectiveSet: string[] = [
-  images.serverRoom.src,
-  images.codeScreen.src,
-  images.cybersecurityDark.src,
-  images.socDashboard.src,
-  images.hardwareRack.src,
-  images.matrixCode.src,
-  images.consultingMeeting.src,
-  images.edtechClassroom.src,
-  images.networkCables.src,
-  images.cloudSky.src,
-  images.skyline.src,
-  images.hrOffice.src,
-];
-
-export function getImage(key: ImageKey): ImageAsset {
-  return images[key];
-}

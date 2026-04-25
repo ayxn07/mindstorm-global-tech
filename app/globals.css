@@ -23,10 +23,10 @@
   --fs-eyebrow: clamp(0.625rem, 0.18vw + 0.58rem, 0.875rem);
   --fs-body: clamp(0.95rem, 0.25vw + 0.88rem, 1.125rem);
   --fs-body-lg: clamp(1.05rem, 0.4vw + 0.95rem, 1.375rem);
-  --fs-h3: clamp(1.25rem, 0.9vw + 1rem, 2.25rem);
-  --fs-h2: clamp(1.75rem, 2.2vw + 1rem, 4.5rem);
-  --fs-display: clamp(2.5rem, 4.2vw + 1rem, 8rem);
-  --fs-display-xl: clamp(3rem, 6vw + 1rem, 11rem);
+  --fs-h3: clamp(1.25rem, 0.7vw + 1rem, 1.875rem);
+  --fs-h2: clamp(1.75rem, 1.6vw + 1rem, 3.25rem);
+  --fs-display: clamp(2.25rem, 2.6vw + 1rem, 4.75rem);
+  --fs-display-xl: clamp(2.75rem, 4vw + 1rem, 7rem);
 
   --pad-section-x: clamp(1.25rem, 4vw, 6.5rem);
   --pad-section-y: clamp(3.5rem, 7vw, 9rem);

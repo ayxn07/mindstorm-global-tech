@@ -1,6 +1,6 @@
 import type { ProcessStep, Service } from "@/types/site";
 
-export const defaultProcessSteps: ProcessStep[] = [
+const defaultProcessSteps: ProcessStep[] = [
   {
     number: 1,
     title: "Requirement Analysis",

@@ -55,7 +55,7 @@ export default function HomeFinalCTA() {
 
           <h2
             id="final-cta-heading"
-            className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-display"
+            className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white"
           >
             Ready to Build a Secure,
             <br className="hidden md:block" />{" "}
