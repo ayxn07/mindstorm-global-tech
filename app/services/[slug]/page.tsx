@@ -9,6 +9,12 @@ import ServiceOutcomeConstellation from "@/components/sections/services/ServiceO
 import ServiceProcess from "@/components/sections/services/ServiceProcess";
 import ServicePageImageTrail from "@/components/sections/services/ServicePageImageTrail";
 import HomeFinalCTA from "@/components/sections/home/HomeFinalCTA";
+import JsonLd from "@/components/seo/JsonLd";
+import { buildMetadata } from "@/lib/seo/metadata";
+import {
+  breadcrumbSchema,
+  serviceSchema,
+} from "@/lib/seo/structured-data";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -22,10 +28,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
   if (!service) return { title: "Service Not Found" };
-  return {
+  return buildMetadata({
     title: service.title,
     description: service.seoDescription,
-  };
+    path: `/services/${service.slug}`,
+    keywords: [service.shortTitle, service.tagline],
+  });
 }
 
 export default async function ServiceDetailPage({ params }: PageProps) {
@@ -35,6 +43,16 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   return (
     <>
+      <JsonLd
+        data={[
+          serviceSchema(service),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Services", path: "/services" },
+            { name: service.shortTitle, path: `/services/${service.slug}` },
+          ]),
+        ]}
+      />
       <ServicePageImageTrail slug={service.slug} />
       <ServiceHero service={service} />
       <ServiceOverview service={service} />

@@ -247,11 +247,15 @@ export default function ContactSplit() {
               value={site.phoneDisplay}
               href={`tel:${site.phone}`}
             />
-            <DetailCard
-              icon={MapPin}
-              label="Headquarters"
-              value={site.address.full}
-            />
+            {site.offices.map((office) => (
+              <DetailCard
+                key={office.label}
+                icon={MapPin}
+                label={office.label}
+                value={office.full}
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(office.mapsQuery)}`}
+              />
+            ))}
             <DetailCard
               icon={Clock}
               label="Hours"
@@ -262,10 +266,73 @@ export default function ContactSplit() {
               icon={Building2}
               label="Company"
               value={site.shortName}
-              hint="MSME · India"
+              hint="MSME · India · UAE"
             />
           </motion.aside>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10% 0px" }}
+          transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 0.9, 0.3, 1] }}
+          className="mx-auto mt-14 max-w-6xl"
+        >
+          <div className="flex items-center gap-3">
+            <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
+              Dubai · Find Us
+            </span>
+            <span aria-hidden className="h-px flex-1 bg-gradient-to-r from-[var(--color-ms-gold)]/45 to-transparent" />
+          </div>
+          <h3 className="mt-5 font-heading text-2xl font-semibold uppercase tracking-[0.015em] text-white md:text-3xl">
+            Aspin Commercial Tower, Dubai
+          </h3>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/60 md:text-base">
+            Visit our Dubai presence for engagements across the GCC. Walk-ins by appointment.
+          </p>
+
+          <div className="relative mt-7 overflow-hidden rounded-3xl border border-[rgba(215,191,94,0.45)] bg-black p-1.5 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.7),0_0_0_1px_rgba(215,191,94,0.18),0_0_42px_-12px_rgba(215,191,94,0.35)]">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0 rounded-3xl bg-[linear-gradient(135deg,rgba(215,191,94,0.45)_0%,rgba(215,191,94,0.05)_35%,rgba(215,191,94,0)_55%,rgba(215,191,94,0.05)_70%,rgba(215,191,94,0.45)_100%)] opacity-80 [mask:linear-gradient(#000,#000)_content-box,linear-gradient(#000,#000)] [mask-composite:exclude] p-px"
+            />
+            <div className="relative overflow-hidden rounded-[1.25rem]">
+              <iframe
+                title="Mindstorm Global · Aspin Commercial Tower, Dubai"
+                src="https://www.google.com/maps?q=Aspin+Commercial+Tower+Dubai+UAE&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                className="h-[360px] w-full border-0 grayscale-[0.35] contrast-[1.05] brightness-[0.92] saturate-[0.85] md:h-[460px]"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-0 rounded-[1.25rem] bg-[radial-gradient(ellipse_at_center,transparent_45%,rgba(0,0,0,0.35)_100%)]"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-gold)]/65 to-transparent"
+              />
+            </div>
+          </div>
+
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-[12px] text-white/55">
+            <span className="inline-flex items-center gap-2">
+              <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-[var(--color-ms-gold)]" />
+              Aspin Commercial Tower · Sheikh Zayed Road · Dubai · UAE
+            </span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Aspin+Commercial+Tower+Dubai+UAE"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-[var(--color-ms-gold)] transition-colors hover:text-white"
+            >
+              Open in Google Maps
+              <ArrowRight className="h-3 w-3" />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

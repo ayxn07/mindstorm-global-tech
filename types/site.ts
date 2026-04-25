@@ -75,6 +75,17 @@ export type PageMeta = {
   ogImage?: string;
 };
 
+export type OfficeAddress = {
+  label: string;
+  line1: string;
+  city: string;
+  state: string;
+  country: string;
+  full: string;
+  geo: { latitude: number; longitude: number };
+  mapsQuery: string;
+};
+
 export type CompanyInfo = {
   name: string;
   shortName: string;
@@ -90,6 +101,17 @@ export type CompanyInfo = {
     country: string;
     full: string;
   };
+  offices: OfficeAddress[];
   domain: string;
   metadataBaseUrl: string;
+  geo: { latitude: number; longitude: number };
+  priceRange: string;
+  socials?: {
+    linkedin?: string;
+    twitter?: string;
+    instagram?: string;
+  };
+  twitterHandle?: string;
+  foundingDate?: string;
+  openingHours?: string[];
 };

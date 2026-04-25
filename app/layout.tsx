@@ -8,33 +8,85 @@ import PageShell from "@/components/layout/PageShell";
 import PageTransition from "@/components/layout/PageTransition";
 import SplashScreen from "@/components/layout/SplashScreen";
 import { VaultProvider } from "@/components/layout/VaultContext";
+import JsonLd from "@/components/seo/JsonLd";
+import { site } from "@/data/site";
+import {
+  localBusinessSchema,
+  organizationSchema,
+  websiteSchema,
+} from "@/lib/seo/structured-data";
+
+const ROOT_TITLE =
+  "Mindstorm Global Consulting Services | IT, Networking, Cybersecurity & Managed IT";
+const ROOT_DESCRIPTION =
+  "Premium IT, software, CCNA networking, cybersecurity, managed IT, HR technology, and education technology solutions for modern enterprises and institutions.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mindstormtechglobal.com"),
+  metadataBase: new URL(site.metadataBaseUrl),
   title: {
-    default: "Mindstorm Global Consulting Services | IT, Networking, Cybersecurity & Managed IT",
-    template: "%s | Mindstorm Global Consulting Services",
+    default: ROOT_TITLE,
+    template: `%s | ${site.name}`,
   },
-  description:
-    "Premium IT, software, CCNA networking, cybersecurity, managed IT, HR technology, and education technology solutions for modern enterprises and institutions.",
-  applicationName: "Mindstorm Global Consulting Services",
+  description: ROOT_DESCRIPTION,
+  applicationName: site.name,
+  authors: [{ name: site.name, url: site.metadataBaseUrl }],
+  creator: site.name,
+  publisher: site.name,
+  category: "Technology Consulting",
+  classification: "IT Consulting, Cybersecurity, Networking, Managed IT",
+  keywords: [
+    "Mindstorm Global",
+    "IT consulting India",
+    "managed IT services",
+    "CCNA networking",
+    "cybersecurity solutions",
+    "software development company",
+    "hardware procurement",
+    "HR technology platforms",
+    "education technology",
+    "Zirakpur IT services",
+    "Punjab IT consulting",
+    "MSME technology partner",
+    "enterprise IT solutions",
+    "SOC SIEM monitoring",
+    "LAN WAN VLAN design",
+    "ERP CRM development",
+    "LMS platforms",
+  ],
+  formatDetection: { email: false, address: false, telephone: false },
+  alternates: { canonical: "/" },
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+    shortcut: "/icon.png",
+  },
+  manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
-    siteName: "Mindstorm Global Consulting Services",
+    siteName: site.name,
     locale: "en_US",
-    url: "/",
-    title: "Mindstorm Global Consulting Services",
-    description:
-      "Smart IT infrastructure, secure networks, and scalable digital solutions for modern businesses.",
-    images: [{ url: "/mindstorm-global-tech-logo.png", alt: "Mindstorm Global" }],
+    url: site.metadataBaseUrl,
+    title: ROOT_TITLE,
+    description: ROOT_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mindstorm Global Consulting Services",
-    description:
-      "Smart IT infrastructure, secure networks, and scalable digital solutions.",
+    title: ROOT_TITLE,
+    description: ROOT_DESCRIPTION,
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  referrer: "origin-when-cross-origin",
 };
 
 export const viewport: Viewport = {
@@ -56,6 +108,9 @@ export default function RootLayout({
       className={`${cinzel.variable} ${inter.variable} antialiased`}
     >
       <body className="min-h-screen bg-ms-black text-ms-white font-body overflow-x-hidden">
+        <JsonLd
+          data={[organizationSchema(), websiteSchema(), localBusinessSchema()]}
+        />
         <BootVault />
         <LenisProvider>
           <VaultProvider>

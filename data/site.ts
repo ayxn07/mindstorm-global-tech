@@ -17,8 +17,32 @@ export const site: CompanyInfo = {
     country: "India",
     full: "Zirakpur, Punjab, India",
   },
+  offices: [
+    {
+      label: "India HQ",
+      line1: "",
+      city: "Zirakpur",
+      state: "Punjab",
+      country: "India",
+      full: "Zirakpur, Punjab, India",
+      geo: { latitude: 30.6425, longitude: 76.8173 },
+      mapsQuery: "Zirakpur, Punjab, India",
+    },
+    {
+      label: "Dubai Office",
+      line1: "Aspin Commercial Tower",
+      city: "Dubai",
+      state: "",
+      country: "UAE",
+      full: "Aspin Commercial Tower, Dubai, UAE",
+      geo: { latitude: 25.2200, longitude: 55.2719 },
+      mapsQuery: "Aspin Commercial Tower, Dubai, UAE",
+    },
+  ],
   domain: "mindstormtechglobal.com",
   metadataBaseUrl: "https://mindstormtechglobal.com",
+  geo: { latitude: 30.6425, longitude: 76.8173 },
+  priceRange: "$$",
 };
 
 export const legal = {
