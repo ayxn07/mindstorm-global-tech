@@ -88,7 +88,7 @@ export default function FeaturedCapabilities() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-8% 0px" }}
           transition={{ duration: 0.9, ease: [0.22, 0.9, 0.3, 1], delay: 0.1 }}
-          className="relative min-h-[clamp(28rem,40vw,52rem)]"
+          className="relative min-h-[18rem] sm:min-h-[22rem] md:min-h-[clamp(28rem,40vw,52rem)]"
         >
           <CardSwap
             width="min(82vw, 1020px)"

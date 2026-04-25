@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -24,6 +24,15 @@ export default function ProcessPostersShowcase() {
   const stickyRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<Array<HTMLElement | null>>([]);
   const postersHandleRef = useRef<FlyingPostersHandle | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   useGSAP(
     () => {
@@ -127,9 +136,10 @@ export default function ProcessPostersShowcase() {
         className="relative h-screen w-full overflow-hidden"
       >
         <FlyingPosters
+          key={isMobile ? "mobile" : "desktop"}
           items={posters}
-          planeWidth={500}
-          planeHeight={500}
+          planeWidth={isMobile ? 320 : 500}
+          planeHeight={isMobile ? 360 : 500}
           distortion={3}
           scrollEase={0.12}
           cameraFov={45}

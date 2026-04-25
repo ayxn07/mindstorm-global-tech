@@ -60,8 +60,8 @@ export default function WhyOutcomes() {
           </p>
         </motion.div>
 
-        <div className="relative mx-auto mt-16 max-w-4xl pl-6 md:pl-12">
-          <TracingBeam className="px-2 md:px-6">
+        <div className="relative mx-auto mt-16 max-w-4xl pl-8 md:pl-12">
+          <TracingBeam className="px-8 md:px-6">
             <div className="space-y-16 md:space-y-20">
               {whyOutcomeChapters.map((chapter, i) => {
                 const Icon = chapter.icon;

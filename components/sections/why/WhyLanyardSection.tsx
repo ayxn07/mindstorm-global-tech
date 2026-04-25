@@ -14,7 +14,7 @@ export default function WhyLanyardSection() {
   return (
     <section
       aria-labelledby="why-lanyard-heading"
-      className="relative w-full overflow-hidden bg-[var(--color-ms-black)]"
+      className="relative hidden w-full overflow-hidden bg-[var(--color-ms-black)] lg:block"
     >
       <div
         aria-hidden

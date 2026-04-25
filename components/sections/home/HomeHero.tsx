@@ -121,7 +121,7 @@ export default function HomeHero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.08, ease: [0.22, 0.9, 0.3, 1] }}
-              className="text-body-lg-fluid mt-7 flex max-w-[58ch] flex-wrap items-baseline gap-x-3 font-heading uppercase tracking-[0.1em] text-white/75 2xl:max-w-[72ch] 3xl:max-w-[84ch] 4xl:max-w-[96ch]"
+              className="mt-5 flex max-w-[58ch] flex-wrap items-baseline gap-x-2 sm:gap-x-3 font-heading uppercase tracking-[0.08em] text-white/75 2xl:max-w-[72ch] 3xl:max-w-[84ch] 4xl:max-w-[96ch] text-[0.78rem] sm:text-body-lg-fluid sm:tracking-[0.1em] sm:mt-7"
             >
               <motion.span
                 layout="position"
@@ -151,14 +151,14 @@ export default function HomeHero() {
             to={{ opacity: 1, y: 0 }}
             ease="power3.out"
             textAlign="left"
-            className="text-display mt-6 w-full max-w-[28ch] 2xl:max-w-[32ch] 3xl:max-w-[36ch] 4xl:max-w-[42ch] font-heading font-semibold uppercase tracking-[0.015em] text-white [overflow-wrap:break-word]"
+            className="mt-6 w-full max-w-[28ch] 2xl:max-w-[32ch] 3xl:max-w-[36ch] 4xl:max-w-[42ch] font-heading font-semibold uppercase tracking-[0.015em] text-white [overflow-wrap:break-word] text-[1.5rem] leading-[1.05] sm:text-display sm:leading-[inherit]"
           />
 
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 0.9, 0.3, 1] }}
-            className="text-body-lg-fluid mt-6 max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl 4xl:max-w-4xl text-white/65"
+            className="mt-4 max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl 4xl:max-w-4xl text-white/65 text-[13px] leading-relaxed sm:text-body-lg-fluid sm:mt-6"
           >
             {pages.home.heroSub}
           </motion.p>
@@ -172,7 +172,7 @@ export default function HomeHero() {
             <Link
               href="/contact"
               aria-label="Get Free Consultation"
-              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-black bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
+              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-5 py-2.5 font-heading text-[11px] uppercase tracking-[0.18em] text-black bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform sm:px-7 sm:py-3 sm:text-[var(--fs-eyebrow)] sm:tracking-[0.22em] hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
             >
               Get Free Consultation
               <ArrowRight className="h-3.5 w-3.5" />
