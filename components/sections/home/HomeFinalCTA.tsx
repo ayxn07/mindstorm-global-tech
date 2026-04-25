@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowRight, Mail, Phone } from "lucide-react";
-import { site } from "@/data/site";
+import { ArrowRight } from "lucide-react";
 
 export default function HomeFinalCTA() {
   return (
@@ -89,43 +88,6 @@ export default function HomeFinalCTA() {
               <span>Explore Our Services</span>
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover/ghost:translate-x-1" />
             </Link>
-          </div>
-
-          <div className="mt-14 grid w-full max-w-2xl grid-cols-1 gap-4 sm:grid-cols-2">
-            <a
-              href={`mailto:${site.email}`}
-              className="group flex items-center gap-4 rounded-xl border border-[var(--color-ms-border)] bg-black/50 px-5 py-4 text-left backdrop-blur-sm transition-colors hover:border-[var(--color-ms-gold)]/55"
-            >
-              <span
-                aria-hidden
-                className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-[rgba(215,191,94,0.35)] bg-[linear-gradient(180deg,rgba(215,191,94,0.16),rgba(121,107,56,0.06))]"
-              >
-                <Mail className="h-4 w-4 text-[var(--color-ms-gold)]" />
-              </span>
-              <div className="min-w-0">
-                <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
-                  Email
-                </p>
-                <p className="truncate text-sm text-white/85">{site.email}</p>
-              </div>
-            </a>
-            <a
-              href={`tel:${site.phone}`}
-              className="group flex items-center gap-4 rounded-xl border border-[var(--color-ms-border)] bg-black/50 px-5 py-4 text-left backdrop-blur-sm transition-colors hover:border-[var(--color-ms-gold)]/55"
-            >
-              <span
-                aria-hidden
-                className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-[rgba(215,191,94,0.35)] bg-[linear-gradient(180deg,rgba(215,191,94,0.16),rgba(121,107,56,0.06))]"
-              >
-                <Phone className="h-4 w-4 text-[var(--color-ms-gold)]" />
-              </span>
-              <div className="min-w-0">
-                <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
-                  Phone
-                </p>
-                <p className="text-sm text-white/85">{site.phoneDisplay}</p>
-              </div>
-            </a>
           </div>
         </motion.div>
       </div>
