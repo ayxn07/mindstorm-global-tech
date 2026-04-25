@@ -127,7 +127,7 @@ export default function Header() {
 
           <nav
             aria-label="Primary"
-            className="pointer-events-auto hidden items-center gap-1 lg:flex ml-27"
+            className="pointer-events-auto ml-4 hidden items-center gap-0.5 lg:flex xl:ml-8 xl:gap-1 2xl:ml-16 3xl:ml-24"
           >
             {mainNav.map((item) => {
               if (item.children?.length) {
@@ -144,7 +144,7 @@ export default function Header() {
                       aria-expanded={servicesOpen}
                       onClick={() => setServicesOpen((v) => !v)}
                       className={cn(
-                        "group relative flex items-center gap-1 px-3 py-2 text-[var(--fs-eyebrow)] font-medium uppercase tracking-[0.18em] transition-colors",
+                        "group relative flex items-center gap-1 whitespace-nowrap px-2 py-2 text-[var(--fs-eyebrow)] font-medium uppercase tracking-[0.12em] transition-colors xl:px-3 xl:tracking-[0.16em] 2xl:tracking-[0.18em]",
                         onServicePage || servicesOpen
                           ? "text-[var(--color-ms-gold)]"
                           : "text-white/80 hover:text-[var(--color-ms-gold)]",
@@ -377,7 +377,7 @@ export default function Header() {
                   key={item.label}
                   href={item.href}
                   className={cn(
-                    "relative px-3 py-2 text-[var(--fs-eyebrow)] font-medium uppercase tracking-[0.18em] transition-colors",
+                    "relative whitespace-nowrap px-2 py-2 text-[var(--fs-eyebrow)] font-medium uppercase tracking-[0.12em] transition-colors xl:px-3 xl:tracking-[0.16em] 2xl:tracking-[0.18em]",
                     active
                       ? "text-[var(--color-ms-gold)]"
                       : "text-white/80 hover:text-[var(--color-ms-gold)]",
@@ -400,7 +400,7 @@ export default function Header() {
             <Link
               href="/contact"
               aria-label="Get Free Consultation"
-              className="relative hidden select-none items-center justify-center rounded-full px-6 py-2.5 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)] md:inline-flex"
+              className="relative hidden select-none items-center justify-center whitespace-nowrap rounded-full px-5 py-2.5 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.16em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] xl:px-6 xl:tracking-[0.2em] 2xl:tracking-[0.22em] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)] md:inline-flex"
             >
               Get Free Consultation
             </Link>
