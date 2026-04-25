@@ -35,7 +35,6 @@ export const metadata: Metadata = {
       "Smart IT infrastructure, secure networks, and scalable digital solutions.",
   },
   robots: { index: true, follow: true },
-  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
