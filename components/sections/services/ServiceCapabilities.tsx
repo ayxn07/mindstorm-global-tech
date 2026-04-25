@@ -49,7 +49,7 @@ export default function ServiceCapabilities({ service }: Props) {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Advanced Capabilities
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -57,7 +57,7 @@ export default function ServiceCapabilities({ service }: Props) {
 
           <h2
             id="service-capabilities-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             Engineered for{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -74,7 +74,7 @@ export default function ServiceCapabilities({ service }: Props) {
             hidden: {},
             visible: { transition: { staggerChildren: 0.07 } },
           }}
-          className="mt-14 grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 md:gap-5"
+          className="mt-14 grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 md:gap-5 4xl:grid-cols-5"
         >
           {service.advancedCapabilities.map((c) => {
             const Icon = resolveIcon(c.icon);
@@ -109,10 +109,10 @@ export default function ServiceCapabilities({ service }: Props) {
                   <Icon className="h-5 w-5 text-[var(--color-ms-gold)]" />
                 </span>
 
-                <h3 className="relative mt-6 font-heading text-lg font-semibold uppercase leading-tight tracking-[0.015em] text-white md:text-xl">
+                <h3 className="relative mt-6 font-heading text-h3-fluid font-semibold uppercase leading-tight tracking-[0.015em] text-white">
                   {c.title}
                 </h3>
-                <p className="relative mt-3 text-[13.5px] leading-relaxed text-white/65 md:text-sm">
+                <p className="relative mt-3 text-body-fluid leading-relaxed text-white/65">
                   {c.description}
                 </p>
               </motion.article>

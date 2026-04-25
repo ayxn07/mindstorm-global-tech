@@ -26,7 +26,7 @@ export default function ProcessFlowingStages() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-gold)]/45 to-transparent"
       />
 
-      <div className="relative w-full px-6 md:px-10 lg:px-16 2xl:px-24">
+      <div className="relative w-full section-pad-x">
         <motion.div
           initial={{ opacity: 0, y: 22 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ export default function ProcessFlowingStages() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               The Flow
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -44,7 +44,7 @@ export default function ProcessFlowingStages() {
 
           <h2
             id="process-flow-heading"
-            className="mt-7 max-w-3xl font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 max-w-3xl font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             Hover the rail.{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">

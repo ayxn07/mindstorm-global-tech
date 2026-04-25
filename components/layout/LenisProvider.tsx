@@ -9,6 +9,15 @@ import { setGlobalLenisActive } from "@/hooks/useLenis";
 export default function LenisProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    const reduceMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) {
+      setGlobalLenisActive(false);
+      return;
+    }
+
     setGlobalLenisActive(true);
 
     const lenis = new Lenis({ duration: 1.1, smoothWheel: true, syncTouch: false });

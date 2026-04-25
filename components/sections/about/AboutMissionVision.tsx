@@ -68,7 +68,7 @@ export default function AboutMissionVision() {
               >
                 <Compass className="h-5 w-5 text-[var(--color-ms-gold)]" />
               </span>
-              <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 Our Mission
               </span>
             </div>
@@ -135,7 +135,7 @@ export default function AboutMissionVision() {
               >
                 <Telescope className="h-5 w-5 text-[var(--color-ms-gold)]" />
               </span>
-              <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 Our Vision
               </span>
             </div>
@@ -165,7 +165,7 @@ export default function AboutMissionVision() {
                 <p className="font-heading text-sm uppercase leading-relaxed tracking-[0.08em] text-white/85 md:text-base">
                   &ldquo;{site.tagline}&rdquo;
                 </p>
-                <p className="mt-2 font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+                <p className="mt-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                   — {site.shortName}
                 </p>
               </div>

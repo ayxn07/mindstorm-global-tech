@@ -90,7 +90,7 @@ export default function WhyChooseUsPreview() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Why Choose Mindstorm
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -98,7 +98,7 @@ export default function WhyChooseUsPreview() {
 
           <h2
             id="why-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white "
           >
             One Partner.{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -114,7 +114,7 @@ export default function WhyChooseUsPreview() {
           <div className="mt-8">
             <Link
               href="/why-choose-us"
-              className="group inline-flex items-center gap-2 font-heading text-[12px] uppercase tracking-[0.22em] text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
+              className="group inline-flex items-center gap-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
             >
               <span>See all reasons</span>
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />

@@ -167,7 +167,7 @@ export default function MobileMenu({ open, onClose }: Props) {
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="relative flex h-full w-full flex-col overflow-y-auto px-6 pt-6 pb-10 md:px-10"
+              className="section-pad-x relative flex h-full w-full flex-col overflow-y-auto pt-6 pb-10"
             >
               <motion.div
                 variants={itemVariants}
@@ -175,7 +175,7 @@ export default function MobileMenu({ open, onClose }: Props) {
               >
                 <div className="flex items-center gap-3">
                   <span aria-hidden className="h-px w-8 bg-[var(--color-ms-gold)]" />
-                  <span className="font-heading text-[11px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                  <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                     Navigation
                   </span>
                 </div>
@@ -214,10 +214,10 @@ export default function MobileMenu({ open, onClose }: Props) {
                           )}
                         >
                           <span className="flex items-baseline gap-4">
-                            <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]/70">
+                            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]/70">
                               {String(i + 1).padStart(2, "0")}
                             </span>
-                            <span className="font-heading text-[26px] font-semibold uppercase leading-none tracking-[0.05em] sm:text-[28px]">
+                            <span className="font-heading text-[clamp(1.5rem,4vw,2rem)] font-semibold uppercase leading-none tracking-[0.05em]">
                               {item.label}
                             </span>
                           </span>
@@ -292,7 +292,7 @@ export default function MobileMenu({ open, onClose }: Props) {
                                         <span className="flex min-w-0 flex-col">
                                           <span
                                             className={cn(
-                                              "font-heading text-[13px] uppercase tracking-[0.1em]",
+                                              "font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.1em]",
                                               sel
                                                 ? "text-[var(--color-ms-gold)]"
                                                 : "text-white",
@@ -301,7 +301,7 @@ export default function MobileMenu({ open, onClose }: Props) {
                                             {child.label}
                                           </span>
                                           {child.description ? (
-                                            <span className="mt-0.5 text-[11.5px] leading-snug text-white/55">
+                                            <span className="mt-0.5 text-[var(--fs-eyebrow)] leading-snug text-white/55">
                                               {child.description}
                                             </span>
                                           ) : null}
@@ -327,7 +327,7 @@ export default function MobileMenu({ open, onClose }: Props) {
                                   <Link
                                     href={servicesItem?.href ?? "/services"}
                                     onClick={onClose}
-                                    className="mt-1 inline-flex w-full items-center justify-between rounded-xl border border-[rgba(215,191,94,0.28)] bg-[rgba(215,191,94,0.04)] px-4 py-3 font-heading text-[11px] uppercase tracking-[0.22em] text-[var(--color-ms-gold)]"
+                                    className="text-eyebrow mt-1 inline-flex w-full items-center justify-between rounded-xl border border-[rgba(215,191,94,0.28)] bg-[rgba(215,191,94,0.04)] px-4 py-3 font-heading uppercase tracking-[0.22em] text-[var(--color-ms-gold)]"
                                   >
                                     <span>View all services</span>
                                     <span aria-hidden>→</span>
@@ -386,12 +386,12 @@ export default function MobileMenu({ open, onClose }: Props) {
                 <Link
                   href="/contact"
                   onClick={onClose}
-                  className="relative flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 font-heading text-[12px] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_8px_18px_-6px_rgba(0,0,0,0.65),0_0_0_1px_rgba(215,191,94,0.65),0_0_24px_-8px_rgba(215,191,94,0.45)]"
+                  className="relative flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_8px_18px_-6px_rgba(0,0,0,0.65),0_0_0_1px_rgba(215,191,94,0.65),0_0_24px_-8px_rgba(215,191,94,0.45)]"
                 >
                   Get Free Consultation
                   <span aria-hidden>→</span>
                 </Link>
-                <div className="mt-7 flex flex-col items-center gap-1.5 text-center text-[11.5px] text-white/55">
+                <div className="mt-7 flex flex-col items-center gap-1.5 text-center text-[var(--fs-eyebrow)] text-white/55">
                   <p className="font-heading uppercase tracking-[0.22em] text-[var(--color-ms-gold)]/80">
                     {site.phoneDisplay}
                   </p>

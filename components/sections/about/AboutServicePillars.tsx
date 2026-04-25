@@ -97,7 +97,7 @@ export default function AboutServicePillars() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               What We Deliver
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -105,7 +105,7 @@ export default function AboutServicePillars() {
 
           <h2
             id="pillars-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             Five pillars.{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -163,7 +163,7 @@ export default function AboutServicePillars() {
                     className="pointer-events-none absolute inset-x-7 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-gold)]/55 to-transparent"
                   />
 
-                  <span className="absolute left-7 top-6 font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                  <span className="absolute left-7 top-6 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                     Pillar {String(i + 1).padStart(2, "0")}
                   </span>
 
@@ -194,7 +194,7 @@ export default function AboutServicePillars() {
                     {tags.map((t) => (
                       <li
                         key={t}
-                        className="inline-flex items-center rounded-full border border-[rgba(215,191,94,0.28)] bg-black/40 px-3 py-1 font-heading text-[10px] uppercase tracking-[0.22em] text-white/75"
+                        className="inline-flex items-center rounded-full border border-[rgba(215,191,94,0.28)] bg-black/40 px-3 py-1 text-eyebrow font-heading uppercase text-white/75"
                       >
                         {t}
                       </li>

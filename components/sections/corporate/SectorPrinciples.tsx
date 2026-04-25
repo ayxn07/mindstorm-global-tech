@@ -95,7 +95,7 @@ export default function SectorPrinciples() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               How We Adapt
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -103,7 +103,7 @@ export default function SectorPrinciples() {
 
           <h2
             id="sector-principles-heading"
-            className="mt-8 font-heading text-4xl font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-5xl md:text-6xl"
+            className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-5xl md:text-6xl"
           >
             Four principles we hold{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -145,7 +145,7 @@ export default function SectorPrinciples() {
                   >
                     <Icon className="h-5 w-5 text-[var(--color-ms-gold)]" />
                   </span>
-                  <span className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/45">
+                  <span className="text-eyebrow font-heading uppercase text-white/45">
                     0{i + 1}
                   </span>
                 </div>
@@ -191,7 +191,7 @@ export default function SectorPrinciples() {
               <span className="font-heading text-2xl font-semibold text-[var(--color-ms-gold)] md:text-3xl">
                 {s.value}
               </span>
-              <span className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/55">
+              <span className="text-eyebrow font-heading uppercase text-white/55">
                 {s.label}
               </span>
             </div>

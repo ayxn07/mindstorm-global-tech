@@ -37,14 +37,14 @@ export default function FluidOutcomes() {
         >
           <div className="flex items-center justify-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Outcomes We Deliver
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
           </div>
           <h2
             id="outcomes-heading"
-            className="mt-6 font-heading text-3xl font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-6 font-heading text-h2-fluid font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white "
           >
             Measurable Impact, Built into Every Engagement
           </h2>
@@ -73,7 +73,7 @@ export default function FluidOutcomes() {
                 className="pointer-events-none absolute -inset-px rounded-2xl bg-[radial-gradient(ellipse_at_top_left,rgba(215,191,94,0.18),transparent_55%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
               />
               <div className="relative">
-                <p className="flex items-baseline font-heading text-5xl font-semibold text-[var(--color-ms-gold)] md:text-6xl 2xl:text-7xl">
+                <p className="flex items-baseline font-heading text-display font-semibold text-[var(--color-ms-gold)] ">
                   <CountUp to={o.value} duration={1.8} />
                   <span className="ml-1 text-3xl text-[var(--color-ms-gold)]/80 md:text-4xl">
                     {o.suffix}

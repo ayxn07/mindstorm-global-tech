@@ -221,7 +221,7 @@ export default function SectorsShowcase() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Sectors We Serve
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -229,7 +229,7 @@ export default function SectorsShowcase() {
 
           <h2
             id="sectors-heading"
-            className="mt-8 font-heading text-4xl font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-5xl md:text-6xl 2xl:text-7xl"
+            className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-display"
           >
             Every Industry Has Its Own
             <br className="hidden md:block" />{" "}
@@ -383,7 +383,7 @@ export default function SectorsShowcase() {
                       {s.tags.map((t) => (
                         <span
                           key={t}
-                          className="inline-flex h-5 items-center rounded-full border border-[var(--color-ms-border)] bg-black/50 px-2 font-heading text-[9.5px] uppercase tracking-[0.22em] text-[var(--color-ms-gold)]"
+                          className="inline-flex h-5 items-center rounded-full border border-[var(--color-ms-border)] bg-black/50 px-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]"
                         >
                           {t}
                         </span>

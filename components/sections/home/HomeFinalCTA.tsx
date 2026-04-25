@@ -47,7 +47,7 @@ export default function HomeFinalCTA() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Start Your Engagement
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -55,7 +55,7 @@ export default function HomeFinalCTA() {
 
           <h2
             id="final-cta-heading"
-            className="mt-8 font-heading text-4xl font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-5xl md:text-6xl 2xl:text-7xl"
+            className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-display"
           >
             Ready to Build a Secure,
             <br className="hidden md:block" />{" "}
@@ -76,7 +76,7 @@ export default function HomeFinalCTA() {
             <Link
               href="/contact"
               aria-label="Get Free Consultation"
-              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 font-heading text-[12px] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
+              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 text-eyebrow font-heading uppercase text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
             >
               Get Free Consultation
               <ArrowRight className="h-3.5 w-3.5" />
@@ -84,7 +84,7 @@ export default function HomeFinalCTA() {
 
             <Link
               href="/services"
-              className="group/ghost inline-flex items-center gap-2 border-b border-white/25 pb-1 font-heading text-[12px] uppercase tracking-[0.28em] text-white/85 transition-colors hover:border-[var(--color-ms-gold)] hover:text-[var(--color-ms-gold)]"
+              className="group/ghost inline-flex items-center gap-2 border-b border-white/25 pb-1 text-eyebrow font-heading uppercase text-white/85 transition-colors hover:border-[var(--color-ms-gold)] hover:text-[var(--color-ms-gold)]"
             >
               <span>Explore Our Services</span>
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover/ghost:translate-x-1" />
@@ -103,7 +103,7 @@ export default function HomeFinalCTA() {
                 <Mail className="h-4 w-4 text-[var(--color-ms-gold)]" />
               </span>
               <div className="min-w-0">
-                <p className="font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+                <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                   Email
                 </p>
                 <p className="truncate text-sm text-white/85">{site.email}</p>
@@ -120,7 +120,7 @@ export default function HomeFinalCTA() {
                 <Phone className="h-4 w-4 text-[var(--color-ms-gold)]" />
               </span>
               <div className="min-w-0">
-                <p className="font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+                <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                   Phone
                 </p>
                 <p className="text-sm text-white/85">{site.phoneDisplay}</p>

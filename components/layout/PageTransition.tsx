@@ -120,12 +120,12 @@ export default function PageTransition() {
           >
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/70" />
-              <span className="font-heading text-[10px] uppercase tracking-[0.55em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 Mindstorm · Tech Global
               </span>
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/70" />
             </div>
-            <div className="font-heading text-[9px] uppercase tracking-[0.45em] text-white/55">
+            <div className="text-eyebrow font-heading uppercase text-white/55">
               {captionVariants[phase]}
             </div>
           </motion.div>

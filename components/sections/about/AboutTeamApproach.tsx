@@ -92,7 +92,7 @@ export default function AboutTeamApproach() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               How We Work
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -100,7 +100,7 @@ export default function AboutTeamApproach() {
 
           <h2
             id="team-heading"
-            className="mt-7 font-heading text-4xl font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-5xl md:text-6xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-5xl md:text-6xl"
           >
             The team behind{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">

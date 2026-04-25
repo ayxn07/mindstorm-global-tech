@@ -95,7 +95,7 @@ export default function HomeHero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[var(--color-ms-black)]"
       />
 
-      <div className="relative grid w-full grid-cols-1 gap-12 px-6 md:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(520px,720px)] lg:gap-10 lg:px-16 xl:grid-cols-[minmax(0,1fr)_minmax(680px,920px)] xl:gap-12 2xl:grid-cols-[minmax(0,1fr)_minmax(820px,1120px)] 2xl:gap-14 2xl:px-24 min-h-[calc(100svh-6rem)]">
+      <div className="section-pad-x content-cap relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(520px,720px)] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_minmax(680px,920px)] xl:gap-12 2xl:grid-cols-[minmax(0,1fr)_minmax(820px,1120px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1fr)_minmax(900px,1280px)] 4xl:grid-cols-[minmax(0,1fr)_minmax(1100px,1500px)] min-h-[calc(100svh-6rem)]">
         <div className="flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -112,7 +112,7 @@ export default function HomeHero() {
               color="#b1a370"
               shineColor="#F6E5A6"
               speed={3}
-              className="font-heading text-[10px] uppercase tracking-[0.36em] md:text-[11px]"
+              className="text-eyebrow font-heading uppercase"
             />
           </motion.div>
 
@@ -121,7 +121,7 @@ export default function HomeHero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.08, ease: [0.22, 0.9, 0.3, 1] }}
-              className="mt-7 flex flex-wrap items-baseline gap-x-3 font-heading text-base uppercase tracking-[0.1em] text-white/75 md:text-lg"
+              className="text-body-lg-fluid mt-7 flex flex-wrap items-baseline gap-x-3 font-heading uppercase tracking-[0.1em] text-white/75"
             >
               <motion.span
                 layout="position"
@@ -151,14 +151,14 @@ export default function HomeHero() {
             to={{ opacity: 1, y: 0 }}
             ease="power3.out"
             textAlign="left"
-            className="mt-6 max-w-[30ch] font-heading text-4xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-5xl md:text-6xl 2xl:text-7xl"
+            className="text-display mt-6 max-w-[30ch] font-heading font-semibold uppercase tracking-[0.015em] text-white"
           />
 
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 0.9, 0.3, 1] }}
-            className="mt-6 max-w-xl text-base leading-relaxed text-white/65 md:text-lg"
+            className="text-body-lg-fluid mt-6 max-w-xl text-white/65"
           >
             {pages.home.heroSub}
           </motion.p>
@@ -172,7 +172,7 @@ export default function HomeHero() {
             <Link
               href="/contact"
               aria-label="Get Free Consultation"
-              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 font-heading text-[12px] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
+              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
             >
               Get Free Consultation
               <ArrowRight className="h-3.5 w-3.5" />
@@ -180,7 +180,7 @@ export default function HomeHero() {
 
             <Link
               href="/#services"
-              className="group/ghost inline-flex items-center gap-2 font-heading text-[12px] uppercase tracking-[0.22em] text-white/80 transition-colors hover:text-[var(--color-ms-gold)]"
+              className="group/ghost inline-flex items-center gap-2 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-white/80 transition-colors hover:text-[var(--color-ms-gold)]"
             >
               <span>Explore Our Services</span>
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover/ghost:translate-x-1" />
@@ -253,7 +253,7 @@ export default function HomeHero() {
                 aria-hidden
                 className="h-2 w-2 rounded-full bg-[var(--color-ms-gold)] shadow-[0_0_10px_var(--color-ms-glow)]"
               />
-              <span className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/85">
+              <span className="text-eyebrow font-heading uppercase text-white/85">
                 Security-First Infrastructure
               </span>
             </div>

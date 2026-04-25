@@ -61,14 +61,14 @@ export default function ProcessPrinciples() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Operating Principles
             </span>
           </div>
 
           <h2
             id="process-principles-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             Four rules{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -141,7 +141,7 @@ export default function ProcessPrinciples() {
             aria-hidden
             className="pointer-events-none absolute inset-x-10 bottom-6 flex justify-center"
           >
-            <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-white/45">
+            <span className="text-eyebrow font-heading uppercase text-white/45">
               Hover a card — feel the spread
             </span>
           </div>

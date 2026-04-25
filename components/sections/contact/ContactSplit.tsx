@@ -88,7 +88,7 @@ export default function ContactSplit() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               The Engagement Brief
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -96,7 +96,7 @@ export default function ContactSplit() {
 
           <h2
             id="contact-form-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white "
           >
             Tell us about{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -210,7 +210,7 @@ export default function ContactSplit() {
               <button
                 type="submit"
                 disabled={status === "submitting"}
-                className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 font-heading text-[12px] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
+                className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 text-eyebrow font-heading uppercase text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
               >
                 {status === "submitting" ? (
                   <>
@@ -272,7 +272,7 @@ export default function ContactSplit() {
 }
 
 const inputClass =
-  "block w-full rounded-lg border border-[var(--color-ms-border)] bg-black/40 px-4 py-3 text-sm text-white placeholder:text-white/35 transition-colors focus:border-[var(--color-ms-gold)]/70 focus:outline-none focus:ring-2 focus:ring-[var(--color-ms-gold)]/25";
+  "block w-full rounded-lg border border-[var(--color-ms-border)] bg-black/40 px-4 py-3 text-base text-white placeholder:text-white/35 transition-colors focus:border-[var(--color-ms-gold)]/70 focus:outline-none focus:ring-2 focus:ring-[var(--color-ms-gold)]/25 sm:text-sm";
 
 function Field({
   label,
@@ -289,7 +289,7 @@ function Field({
 }) {
   return (
     <label htmlFor={htmlFor} className={`flex flex-col gap-2 ${className}`}>
-      <span className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/55">
+      <span className="text-eyebrow font-heading uppercase text-white/55">
         {label}
         {required && <span className="ml-1 text-[var(--color-ms-gold)]">*</span>}
       </span>
@@ -320,7 +320,7 @@ function DetailCard({
         <Icon className="h-4 w-4 text-[var(--color-ms-gold)]" />
       </span>
       <div className="min-w-0 flex-1">
-        <p className="font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+        <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
           {label}
         </p>
         <p className="mt-0.5 truncate text-sm text-white/85">{value}</p>

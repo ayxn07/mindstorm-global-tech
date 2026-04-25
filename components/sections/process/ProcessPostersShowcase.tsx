@@ -167,7 +167,7 @@ export default function ProcessPostersShowcase() {
           >
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-              <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 Stage Gallery
               </span>
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -202,10 +202,10 @@ export default function ProcessPostersShowcase() {
               >
                 <div className="rounded-2xl border border-[var(--color-ms-border)] bg-black/70 p-6 backdrop-blur-md md:p-7">
                   <div className="flex items-center justify-between gap-3">
-                    <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                    <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                       Stage {stage.step}
                     </span>
-                    <span className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/55">
+                    <span className="text-eyebrow font-heading uppercase text-white/55">
                       {stage.duration}
                     </span>
                   </div>
@@ -239,7 +239,7 @@ export default function ProcessPostersShowcase() {
         </div>
 
         <div className="pointer-events-none absolute inset-x-0 bottom-8 z-20 flex justify-center">
-          <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-white/45">
+          <span className="text-eyebrow font-heading uppercase text-white/45">
             Scroll to advance
           </span>
         </div>

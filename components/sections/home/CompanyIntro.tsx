@@ -23,7 +23,7 @@ export default function CompanyIntro() {
   return (
     <section
       aria-labelledby="company-intro-heading"
-      className="relative w-full overflow-hidden bg-[var(--color-ms-black)] py-24 md:py-32"
+      className="section-pad-y relative w-full overflow-hidden bg-[var(--color-ms-black)]"
     >
       <div
         aria-hidden
@@ -34,7 +34,7 @@ export default function CompanyIntro() {
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-border)] to-transparent"
       />
 
-      <div className="relative grid w-full grid-cols-1 gap-14 px-6 md:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:items-center lg:gap-20 lg:px-16 2xl:px-24">
+      <div className="section-pad-x relative grid w-full grid-cols-1 gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:items-center lg:gap-20">
         {/* LEFT — Image (16:9) */}
         <motion.div
           initial={{ opacity: 0, y: 28 }}
@@ -58,7 +58,7 @@ export default function CompanyIntro() {
             />
           </div>
 
-          <div className="pointer-events-none absolute -left-4 bottom-6 flex items-center gap-3 rounded-2xl border border-[var(--color-ms-border)] bg-black/75 px-4 py-3 backdrop-blur-xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.8)] md:-left-6">
+          <div className="pointer-events-none absolute -left-2 bottom-6 flex items-center gap-3 rounded-2xl border border-[var(--color-ms-border)] bg-black/75 px-4 py-3 backdrop-blur-xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.8)] sm:-left-4 md:-left-6">
             <span
               aria-hidden
               className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-[rgba(215,191,94,0.35)] bg-[linear-gradient(180deg,rgba(215,191,94,0.18)_0%,rgba(121,107,56,0.06)_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.18),inset_0_-1px_0_rgba(0,0,0,0.45)]"
@@ -66,20 +66,20 @@ export default function CompanyIntro() {
               <CheckCircle2 className="h-4 w-4 text-[var(--color-ms-gold)]" />
             </span>
             <div>
-              <p className="font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+              <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 One Partner
               </p>
-              <p className="text-[11px] leading-tight text-white/70">
+              <p className="text-eyebrow leading-tight text-white/70 normal-case tracking-normal">
                 End-to-end technology delivery
               </p>
             </div>
           </div>
 
-          <div className="pointer-events-none absolute -right-3 -top-4 rounded-2xl border border-[var(--color-ms-border)] bg-black/75 px-4 py-3 backdrop-blur-xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.8)] md:-right-5 md:-top-5">
-            <p className="font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+          <div className="pointer-events-none absolute -right-2 -top-3 rounded-2xl border border-[var(--color-ms-border)] bg-black/75 px-4 py-3 backdrop-blur-xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.8)] sm:-right-3 sm:-top-4 md:-right-5 md:-top-5">
+            <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Enterprise Grade
             </p>
-            <p className="text-[11px] leading-tight text-white/70">
+            <p className="text-eyebrow leading-tight text-white/70 normal-case tracking-normal">
               Security-first defaults
             </p>
           </div>
@@ -104,19 +104,19 @@ export default function CompanyIntro() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               {intro.eyebrow}
             </span>
           </div>
 
           <h2
             id="company-intro-heading"
-            className="mt-7 font-heading text-4xl font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-5xl md:text-6xl 2xl:text-7xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white"
           >
             {intro.heading}
           </h2>
 
-          <p className="mt-7 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg 2xl:text-xl">
+          <p className="mt-7 max-w-2xl text-body-lg-fluid leading-relaxed text-white/70">
             {intro.lead}
           </p>
 
@@ -124,7 +124,7 @@ export default function CompanyIntro() {
             {intro.points.map((p) => (
               <li key={p} className="flex items-start gap-3">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-ms-gold)]" />
-                <span className="text-[15px] text-white/80 md:text-base">
+                <span className="text-body-fluid text-white/80">
                   {p}
                 </span>
               </li>
@@ -134,7 +134,7 @@ export default function CompanyIntro() {
           <div className="mt-11">
             <Link
               href="/about"
-              className="group inline-flex items-center gap-2 font-heading text-[13px] uppercase tracking-[0.24em] text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
+              className="group inline-flex items-center gap-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
             >
               <span>Learn more about us</span>
               <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />

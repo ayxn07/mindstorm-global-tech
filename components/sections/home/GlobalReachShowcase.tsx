@@ -137,7 +137,7 @@ export default function GlobalReachShowcase() {
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-border)] to-transparent"
       />
 
-      <div className="relative w-full px-6 py-20 md:px-10 md:py-28 lg:px-12 2xl:px-16">
+      <div className="section-pad-x section-pad-y relative w-full">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -147,21 +147,21 @@ export default function GlobalReachShowcase() {
         >
           <div className="flex items-center justify-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Global Footprint
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
           </div>
           <h2
             id="global-reach-heading"
-            className="mt-6 font-heading text-4xl font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-5xl md:text-6xl 2xl:text-7xl"
+            className="mt-6 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white"
           >
             Engineered Locally.{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
               Delivered Globally.
             </span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/70 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-body-lg-fluid leading-relaxed text-white/70">
             One operating model across continents — the same team that
             architects your stack runs it, secures it, and scales it with you.
           </p>
@@ -180,7 +180,7 @@ export default function GlobalReachShowcase() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-10% 0px" }}
               transition={{ duration: 1, ease: [0.22, 0.9, 0.3, 1] }}
-              className="relative mx-auto aspect-square w-full max-w-[760px] lg:max-w-none lg:h-[760px] 2xl:h-[860px]"
+              className="relative mx-auto aspect-square w-full max-w-[clamp(28rem,55vw,920px)] lg:max-w-none lg:h-[clamp(40rem,55vw,68rem)]"
             >
               <div className="relative h-full w-full">
                 <World globeConfig={globeConfig} data={sampleArcs} />
@@ -226,10 +226,10 @@ function PillarCard({
           <Icon className="h-6 w-6" strokeWidth={1.5} />
         </span>
         <div className="min-w-0">
-          <h3 className="font-heading text-lg font-semibold uppercase leading-tight tracking-[0.04em] text-white md:text-xl">
+          <h3 className="font-heading text-h3-fluid font-semibold uppercase leading-tight tracking-[0.04em] text-white">
             {pillar.title}
           </h3>
-          <p className="mt-3 text-[14.5px] leading-relaxed text-white/70 md:text-[15px]">
+          <p className="mt-3 text-body-fluid leading-relaxed text-white/70">
             {pillar.body}
           </p>
         </div>

@@ -39,7 +39,7 @@ export default function WhyLanyardSection() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               One Badge. Every Layer.
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -47,7 +47,7 @@ export default function WhyLanyardSection() {
 
           <h2
             id="why-lanyard-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white "
           >
             Built Around{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -67,7 +67,7 @@ export default function WhyLanyardSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10% 0px" }}
           transition={{ duration: 0.8, ease: [0.22, 0.9, 0.3, 1] }}
-          className="relative mx-auto mt-12 flex h-[640px] w-full max-w-4xl items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-ms-border)] bg-[radial-gradient(ellipse_at_center,rgba(28,25,18,0.95)_0%,rgba(8,8,6,0.98)_70%)] md:mt-16 md:h-[720px]"
+          className="relative mx-auto mt-12 flex h-[clamp(34rem,72vw,52rem)] w-full max-w-4xl items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-ms-border)] bg-[radial-gradient(ellipse_at_center,rgba(28,25,18,0.95)_0%,rgba(8,8,6,0.98)_70%)] md:mt-16"
         >
           <div
             aria-hidden
@@ -88,7 +88,7 @@ export default function WhyLanyardSection() {
           </div>
 
           <div className="pointer-events-none absolute bottom-6 left-1/2 z-20 -translate-x-1/2 text-center">
-            <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-white/50">
+            <span className="text-eyebrow font-heading uppercase text-white/50">
               Drag · Throw · Release
             </span>
           </div>

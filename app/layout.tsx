@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { cinzel, inter } from "@/lib/fonts";
 import BootVault from "@/components/layout/BootVault";
@@ -35,6 +35,15 @@ export const metadata: Metadata = {
       "Smart IT infrastructure, secure networks, and scalable digital solutions.",
   },
   robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#000000",
+  colorScheme: "dark",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

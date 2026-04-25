@@ -34,7 +34,7 @@ export default function WhyComparison() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Vendor vs Mindstorm
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -42,7 +42,7 @@ export default function WhyComparison() {
 
           <h2
             id="why-comparison-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             The same brief, two{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -67,10 +67,10 @@ export default function WhyComparison() {
             className="relative overflow-hidden rounded-3xl border border-white/10 bg-[linear-gradient(180deg,rgba(20,18,14,0.8)_0%,rgba(8,8,6,0.92)_100%)] p-7 md:p-9"
           >
             <div className="flex items-center justify-between gap-3">
-              <span className="font-heading text-[11px] uppercase tracking-[0.32em] text-white/50">
+              <span className="text-eyebrow font-heading uppercase text-white/50">
                 {whyComparison.vendor.label}
               </span>
-              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-heading text-[10px] uppercase tracking-[0.28em] text-white/55">
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-eyebrow font-heading uppercase text-white/55">
                 {whyComparison.vendor.badge}
               </span>
             </div>
@@ -123,10 +123,10 @@ export default function WhyComparison() {
             />
 
             <div className="relative flex items-center justify-between gap-3">
-              <span className="font-heading text-[11px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 {whyComparison.mindstorm.label}
               </span>
-              <span className="rounded-full border border-[rgba(215,191,94,0.55)] bg-[rgba(215,191,94,0.12)] px-3 py-1 font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+              <span className="rounded-full border border-[rgba(215,191,94,0.55)] bg-[rgba(215,191,94,0.12)] px-3 py-1 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 {whyComparison.mindstorm.badge}
               </span>
             </div>

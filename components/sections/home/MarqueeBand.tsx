@@ -92,7 +92,7 @@ export default function MarqueeBand() {
         {WORDS.map((w, i) => (
           <span
             key={`a-${w}-${i}`}
-            className="mx-8 font-heading text-6xl font-semibold uppercase tracking-[0.04em] text-transparent md:text-7xl lg:text-8xl 2xl:text-[10rem]"
+            className="mx-8 font-heading text-display-xl font-semibold uppercase tracking-[0.04em] text-transparent"
             style={{
               WebkitTextStroke: "1px rgba(215,191,94,0.65)",
             }}
@@ -111,7 +111,7 @@ export default function MarqueeBand() {
         {WORDS.map((w, i) => (
           <span
             key={`b-${w}-${i}`}
-            className="mx-8 font-heading text-5xl font-semibold uppercase tracking-[0.04em] text-white/75 md:text-6xl lg:text-7xl 2xl:text-8xl"
+            className="mx-8 font-heading text-display-xl font-semibold uppercase tracking-[0.04em] text-white/75"
           >
             {w}
             <span className="mx-4 inline-block h-1.5 w-1.5 translate-y-[-0.5em] rounded-full bg-white/40 align-middle" />

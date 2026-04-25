@@ -41,7 +41,7 @@ export default function ServiceFeatureGroups({ service }: Props) {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               What We Deliver
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -49,7 +49,7 @@ export default function ServiceFeatureGroups({ service }: Props) {
 
           <h2
             id="service-features-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             Specialised{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -101,7 +101,7 @@ export default function ServiceFeatureGroups({ service }: Props) {
                     aria-hidden
                     className="pointer-events-none absolute inset-x-7 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-gold)]/55 to-transparent"
                   />
-                  <span className="absolute left-7 top-6 font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                  <span className="absolute left-7 top-6 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>

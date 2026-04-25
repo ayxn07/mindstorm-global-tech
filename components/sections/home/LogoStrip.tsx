@@ -21,7 +21,7 @@ export default function LogoStrip() {
     >
       <div className="mb-7 flex items-center justify-center gap-3 px-6">
         <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-        <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+        <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
           Technology Ecosystem
         </span>
         <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />

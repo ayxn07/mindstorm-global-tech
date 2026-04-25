@@ -64,8 +64,8 @@ export default function BootVault() {
           gap: "10px",
           fontFamily: "var(--font-cinzel), serif",
           color: "#D7BF5E",
-          fontSize: "10px",
-          letterSpacing: "0.55em",
+          fontSize: "clamp(0.625rem, 0.18vw + 0.58rem, 0.875rem)",
+          letterSpacing: "clamp(0.18em, 0.06vw + 0.16em, 0.36em)",
           textTransform: "uppercase",
         }}
       >
@@ -91,8 +91,8 @@ export default function BootVault() {
         <div
           style={{
             color: "rgba(255,255,255,0.5)",
-            fontSize: "9px",
-            letterSpacing: "0.45em",
+            fontSize: "clamp(0.625rem, 0.18vw + 0.58rem, 0.875rem)",
+            letterSpacing: "clamp(0.18em, 0.06vw + 0.16em, 0.36em)",
           }}
         >
           Verifying credentials

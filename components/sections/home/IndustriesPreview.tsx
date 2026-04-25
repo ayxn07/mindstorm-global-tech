@@ -67,14 +67,14 @@ export default function IndustriesPreview() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Industries We Serve
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
           </div>
           <h2
             id="industries-heading"
-            className="mt-6 font-heading text-3xl font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-6 font-heading text-h2-fluid font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white "
           >
             Technology That Works Across Sectors
           </h2>
@@ -85,7 +85,7 @@ export default function IndustriesPreview() {
           </p>
           <Link
             href="/industries"
-            className="group mt-8 inline-flex items-center gap-2 font-heading text-[12px] uppercase tracking-[0.22em] text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
+            className="group mt-8 inline-flex items-center gap-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
           >
             <span>Explore all industries</span>
             <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
@@ -97,7 +97,7 @@ export default function IndustriesPreview() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-10% 0px" }}
           transition={{ duration: 1, ease: [0.22, 0.9, 0.3, 1], delay: 0.15 }}
-          className="relative mx-auto mt-16 h-[520px] w-full overflow-hidden rounded-2xl border border-[var(--color-ms-border)] md:h-[620px] lg:h-[720px]"
+          className="relative mx-auto mt-16 h-[clamp(28rem,55vw,48rem)] w-full overflow-hidden rounded-2xl border border-[var(--color-ms-border)]"
         >
           {inView ? (
             <DomeGallery

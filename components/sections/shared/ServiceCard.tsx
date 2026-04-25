@@ -44,7 +44,7 @@ export default function ServiceCard({
           className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"
         />
         {typeof index === "number" ? (
-          <span className="absolute left-4 top-4 inline-flex h-7 items-center rounded-full border border-[var(--color-ms-border)] bg-black/60 px-3 font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)] backdrop-blur-sm">
+          <span className="absolute left-4 top-4 inline-flex h-7 items-center rounded-full border border-[var(--color-ms-border)] bg-black/60 px-3 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] backdrop-blur-sm">
             {String(index + 1).padStart(2, "0")}
           </span>
         ) : null}

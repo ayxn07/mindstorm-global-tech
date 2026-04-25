@@ -31,7 +31,7 @@ export default function WhyFAQ() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Common Questions
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -39,7 +39,7 @@ export default function WhyFAQ() {
 
           <h2
             id="why-faq-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             What teams ask{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -72,7 +72,7 @@ export default function WhyFAQ() {
           className="mx-auto mt-12 flex max-w-3xl flex-col items-center justify-between gap-4 rounded-2xl border border-[var(--color-ms-border)] bg-[linear-gradient(180deg,rgba(22,20,14,0.78)_0%,rgba(10,9,6,0.92)_100%)] p-6 text-center md:flex-row md:text-left"
         >
           <div>
-            <p className="font-heading text-[11px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+            <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Still have a question?
             </p>
             <p className="mt-2 text-sm text-white/70">
@@ -81,7 +81,7 @@ export default function WhyFAQ() {
           </div>
           <Link
             href="/contact"
-            className="group inline-flex items-center gap-2 rounded-full border border-[rgba(215,191,94,0.55)] bg-black/40 px-6 py-3 font-heading text-[12px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)] backdrop-blur-sm transition-colors hover:bg-[var(--color-ms-gold)] hover:text-black"
+            className="group inline-flex items-center gap-2 rounded-full border border-[rgba(215,191,94,0.55)] bg-black/40 px-6 py-3 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] backdrop-blur-sm transition-colors hover:bg-[var(--color-ms-gold)] hover:text-black"
           >
             Ask an Engineer
             <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />

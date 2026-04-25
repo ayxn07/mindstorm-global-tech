@@ -20,12 +20,16 @@ export default function PageBlur() {
           <GradualBlur
             target="page"
             position="bottom"
-            height="6rem"
+            height="clamp(4rem, 6vw, 8rem)"
             strength={2}
             divCount={6}
             curve="ease-out"
             opacity={1}
             zIndex={30}
+            responsive
+            mobileHeight="4rem"
+            tabletHeight="5rem"
+            desktopHeight="6rem"
           />
         </motion.div>
       )}

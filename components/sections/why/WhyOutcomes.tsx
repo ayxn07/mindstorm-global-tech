@@ -38,7 +38,7 @@ export default function WhyOutcomes() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               The Outcomes Chapter
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -46,7 +46,7 @@ export default function WhyOutcomes() {
 
           <h2
             id="why-outcomes-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             What changes after{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -79,11 +79,11 @@ export default function WhyOutcomes() {
                     className="relative"
                   >
                     <div className="flex flex-wrap items-center gap-3">
-                      <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                      <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                         Chapter {chapter.index}
                       </span>
                       <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/40" />
-                      <span className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/50">
+                      <span className="text-eyebrow font-heading uppercase text-white/50">
                         {chapter.eyebrow}
                       </span>
                     </div>

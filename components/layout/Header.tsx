@@ -107,7 +107,7 @@ export default function Header() {
             : "bg-black/60 backdrop-blur-xl border-b border-transparent",
         )}
       >
-        <div className="relative flex h-16 w-full items-center justify-between px-6 md:h-20 md:px-10 lg:px-16 2xl:px-24">
+        <div className="section-pad-x relative flex h-16 w-full items-center justify-between md:h-20 3xl:h-24 4xl:h-28">
           <Link
             href="/"
             className="inline-flex shrink-0 items-center"
@@ -120,8 +120,8 @@ export default function Header() {
               height={188}
               quality={100}
               priority
-              sizes="(max-width: 768px) 140px, 192px"
-              className="h-10 w-auto select-none md:h-12"
+              sizes="(max-width: 768px) 140px, (max-width: 1920px) 192px, 240px"
+              className="h-10 w-auto select-none md:h-12 3xl:h-14 4xl:h-16"
             />
           </Link>
 
@@ -144,7 +144,7 @@ export default function Header() {
                       aria-expanded={servicesOpen}
                       onClick={() => setServicesOpen((v) => !v)}
                       className={cn(
-                        "group relative flex items-center gap-1 px-3 py-2 text-[12px] font-medium uppercase tracking-[0.18em] transition-colors",
+                        "group relative flex items-center gap-1 px-3 py-2 text-[var(--fs-eyebrow)] font-medium uppercase tracking-[0.18em] transition-colors",
                         onServicePage || servicesOpen
                           ? "text-[var(--color-ms-gold)]"
                           : "text-white/80 hover:text-[var(--color-ms-gold)]",
@@ -377,7 +377,7 @@ export default function Header() {
                   key={item.label}
                   href={item.href}
                   className={cn(
-                    "relative px-3 py-2 text-[12px] font-medium uppercase tracking-[0.18em] transition-colors",
+                    "relative px-3 py-2 text-[var(--fs-eyebrow)] font-medium uppercase tracking-[0.18em] transition-colors",
                     active
                       ? "text-[var(--color-ms-gold)]"
                       : "text-white/80 hover:text-[var(--color-ms-gold)]",
@@ -400,7 +400,7 @@ export default function Header() {
             <Link
               href="/contact"
               aria-label="Get Free Consultation"
-              className="relative hidden select-none items-center justify-center rounded-full px-6 py-2.5 font-heading text-[11px] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)] md:inline-flex"
+              className="relative hidden select-none items-center justify-center rounded-full px-6 py-2.5 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)] md:inline-flex"
             >
               Get Free Consultation
             </Link>

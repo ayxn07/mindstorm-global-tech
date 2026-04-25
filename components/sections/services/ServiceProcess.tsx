@@ -32,7 +32,7 @@ export default function ServiceProcess({ service }: Props) {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               How We Deliver
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -40,7 +40,7 @@ export default function ServiceProcess({ service }: Props) {
 
           <h2
             id="service-process-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             A six-step{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -91,7 +91,7 @@ export default function ServiceProcess({ service }: Props) {
                 />
 
                 <div className="relative flex items-center gap-4">
-                  <span className="font-heading text-5xl font-semibold leading-none text-[var(--color-ms-gold)]/85 md:text-6xl">
+                  <span className="font-heading text-display font-semibold leading-none text-[var(--color-ms-gold)]/85 md:text-6xl">
                     {String(step.number).padStart(2, "0")}
                   </span>
                 </div>

@@ -60,14 +60,14 @@ export default function AboutOriginStory() {
           >
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-              <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 Our Foundation
               </span>
             </div>
 
             <h2
               id="origin-heading"
-              className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+              className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
             >
               One Partner.{" "}
               <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -147,7 +147,7 @@ export default function AboutOriginStory() {
               >
                 <MapPin className="h-3.5 w-3.5 text-[var(--color-ms-gold)]" />
               </span>
-              <span className="font-heading text-[11px] uppercase tracking-[0.28em] text-white/80">
+              <span className="text-eyebrow font-heading uppercase text-white/80">
                 Headquartered in {site.address.full}
               </span>
             </motion.div>
@@ -159,7 +159,7 @@ export default function AboutOriginStory() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.9, ease: [0.22, 0.9, 0.3, 1] }}
-            className="relative min-h-[520px] w-full overflow-hidden rounded-2xl border border-[var(--color-ms-border)] shadow-[0_40px_90px_-40px_rgba(0,0,0,0.95),0_0_0_1px_rgba(215,191,94,0.18)] lg:min-h-full"
+            className="relative min-h-[clamp(20rem,55vw,520px)] w-full overflow-hidden rounded-2xl border border-[var(--color-ms-border)] shadow-[0_40px_90px_-40px_rgba(0,0,0,0.95),0_0_0_1px_rgba(215,191,94,0.18)] lg:min-h-full"
           >
             <Image
               src={images.skyline.src}
@@ -184,7 +184,7 @@ export default function AboutOriginStory() {
             <div className="absolute inset-x-0 bottom-0 flex flex-col gap-5 p-8 md:p-10">
               <div className="flex items-center gap-3">
                 <span aria-hidden className="h-px w-8 bg-[var(--color-ms-gold)]" />
-                <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                   Built for the long horizon
                 </span>
               </div>

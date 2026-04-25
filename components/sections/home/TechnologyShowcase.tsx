@@ -41,14 +41,14 @@ export default function TechnologyShowcase() {
         >
           <div className="flex items-center justify-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Technology Showcase
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
           </div>
           <h2
             id="technology-heading"
-            className="mt-6 font-heading text-3xl font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-6 font-heading text-h2-fluid font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white "
           >
             The Technology Stack Behind Every Engagement
           </h2>

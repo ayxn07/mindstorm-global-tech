@@ -33,7 +33,7 @@ export default function CoreServicesSnapshot() {
     <section
       id="services"
       aria-labelledby="services-heading"
-      className="relative w-full overflow-hidden bg-[var(--color-ms-black)] py-24 md:py-32"
+      className="section-pad-y relative w-full overflow-hidden bg-[var(--color-ms-black)]"
     >
       <div
         aria-hidden
@@ -44,7 +44,7 @@ export default function CoreServicesSnapshot() {
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-border)] to-transparent"
       />
 
-      <div className="relative w-full px-6 md:px-10 lg:px-16 2xl:px-24">
+      <div className="relative w-full section-pad-x">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -58,24 +58,24 @@ export default function CoreServicesSnapshot() {
                 aria-hidden
                 className="h-px w-10 bg-[var(--color-ms-gold)]"
               />
-              <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 Our Services
               </span>
             </div>
             <h2
               id="services-heading"
-              className="mt-5 font-heading text-3xl font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+              className="mt-5 font-heading text-h2-fluid font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white "
             >
               Integrated Technology Across the Enterprise
             </h2>
           </div>
-          <p className="max-w-md text-sm leading-relaxed text-white/60 md:text-base">
+          <p className="max-w-md text-body-fluid leading-relaxed text-white/60">
             Seven service lines, one technology partner — engineered to work
             together across your infrastructure, applications, and operations.
           </p>
         </motion.div>
 
-        <ul className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        <ul className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 4xl:grid-cols-5">
           {services.map((service, i) => {
             const Icon = iconBySlug[service.slug] ?? Server;
             const img = images[service.heroImageKey as ImageKey];
@@ -136,16 +136,16 @@ export default function CoreServicesSnapshot() {
                       </div>
 
                       <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
-                        <p className="font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+                        <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                           Service {String(i + 1).padStart(2, "0")}
                         </p>
-                        <h3 className="mt-2.5 font-heading text-lg font-semibold uppercase leading-tight tracking-[0.015em] text-white md:text-xl">
+                        <h3 className="mt-2.5 font-heading text-h3-fluid font-semibold uppercase leading-tight tracking-[0.015em] text-white">
                           {service.shortTitle}
                         </h3>
-                        <p className="mt-2 text-[13px] leading-relaxed text-white/70">
+                        <p className="mt-2 text-body-fluid leading-relaxed text-white/70">
                           {service.tagline}
                         </p>
-                        <span className="mt-4 inline-flex items-center gap-2 font-heading text-[10px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+                        <span className="mt-4 inline-flex items-center gap-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                           <span>Explore</span>
                           <ArrowRight className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1.5" />
                         </span>
@@ -178,20 +178,20 @@ export default function CoreServicesSnapshot() {
                     aria-hidden
                     className="h-px w-8 bg-[var(--color-ms-gold)]"
                   />
-                  <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                  <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                     Full Approach
                   </span>
                 </div>
-                <h3 className="mt-4 font-heading text-xl font-semibold uppercase leading-tight tracking-[0.015em] text-white md:text-2xl">
+                <h3 className="mt-4 font-heading text-h3-fluid font-semibold uppercase leading-tight tracking-[0.015em] text-white">
                   See how we deliver across every service line
                 </h3>
-                <p className="mt-4 text-sm leading-relaxed text-white/65">
+                <p className="mt-4 text-body-fluid leading-relaxed text-white/65">
                   Our consulting engagements span discovery, design,
                   implementation, and long-term support — integrated, not
                   stitched together.
                 </p>
               </div>
-              <span className="mt-6 inline-flex items-center gap-2 font-heading text-[11px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)]">
+              <span className="mt-6 inline-flex items-center gap-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 <span>Explore our approach</span>
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1.5" />
               </span>

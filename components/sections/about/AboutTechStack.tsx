@@ -8,7 +8,7 @@ import { images } from "@/data/images";
 
 const logos = homeTechLogos.map((name) => ({
   node: (
-    <span className="flex h-12 items-center whitespace-nowrap px-7 font-heading text-[15px] uppercase tracking-[0.26em] text-white/55 transition-colors duration-200 hover:text-[var(--color-ms-gold)] md:text-base">
+    <span className="flex h-12 items-center whitespace-nowrap px-7 text-eyebrow font-heading uppercase text-white/55 transition-colors duration-200 hover:text-[var(--color-ms-gold)] md:text-base">
       {name}
     </span>
   ),
@@ -55,7 +55,7 @@ export default function AboutTechStack() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Technology Partners
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -63,7 +63,7 @@ export default function AboutTechStack() {
 
           <h2
             id="techstack-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             Built on platforms{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -104,7 +104,7 @@ export default function AboutTechStack() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-10% 0px" }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="mx-auto mt-10 max-w-xl text-center font-heading text-[10px] uppercase tracking-[0.32em] text-white/45"
+          className="mx-auto mt-10 max-w-xl text-center text-eyebrow font-heading uppercase text-white/45"
         >
           Certified partner, reseller, or deployment-experienced
           across all listed platforms

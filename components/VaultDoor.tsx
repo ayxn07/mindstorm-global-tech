@@ -308,7 +308,7 @@ function Wordmark({ isLeft }: { isLeft: boolean }) {
         aria-hidden
         className={`pointer-events-none absolute top-10 ${
           isLeft ? "left-12" : "right-12"
-        } font-heading text-[9px] uppercase tracking-[0.55em] text-white/[0.18]`}
+        } text-eyebrow font-heading uppercase text-white/[0.18]`}
       >
         {isLeft ? "Mindstorm" : "Tech · Global"}
       </div>
@@ -316,7 +316,7 @@ function Wordmark({ isLeft }: { isLeft: boolean }) {
         aria-hidden
         className={`pointer-events-none absolute bottom-10 ${
           isLeft ? "left-12" : "right-12"
-        } font-heading text-[9px] uppercase tracking-[0.55em] text-white/[0.12]`}
+        } text-eyebrow font-heading uppercase text-white/[0.12]`}
       >
         {isLeft ? "Series · MTG-01" : "Authorised Access"}
       </div>

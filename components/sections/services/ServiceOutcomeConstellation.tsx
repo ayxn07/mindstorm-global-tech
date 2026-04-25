@@ -75,10 +75,10 @@ function TiltCard({
           className="relative flex items-center justify-between"
           style={{ transform: "translateZ(30px)" }}
         >
-          <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+          <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
             Outcome
           </span>
-          <span className="font-heading text-3xl font-semibold leading-none text-[var(--color-ms-gold)]/85 md:text-4xl">
+          <span className="font-heading text-h2-fluid font-semibold leading-none text-[var(--color-ms-gold)]/85 md:text-4xl">
             {String(index + 1).padStart(2, "0")}
             <span className="text-white/20">/{String(total).padStart(2, "0")}</span>
           </span>
@@ -92,7 +92,7 @@ function TiltCard({
         </p>
 
         <div
-          className="relative mt-6 flex items-center gap-2 text-[10px] uppercase tracking-[0.28em] text-white/40"
+          className="relative mt-6 flex items-center gap-2 text-eyebrow uppercase text-white/40"
           style={{ transform: "translateZ(15px)" }}
         >
           <span aria-hidden className="h-px w-6 bg-[var(--color-ms-gold)]/50" />
@@ -163,7 +163,7 @@ export default function ServiceOutcomeConstellation({ service }: Props) {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Outcome Pathway
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -171,7 +171,7 @@ export default function ServiceOutcomeConstellation({ service }: Props) {
 
           <h2
             id="service-outcomes-heading"
-            className="mt-7 max-w-3xl font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 max-w-3xl font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             From engagement to{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -216,7 +216,7 @@ export default function ServiceOutcomeConstellation({ service }: Props) {
               </div>
             </div>
 
-            <div className="hidden items-center gap-2 text-[10px] uppercase tracking-[0.28em] text-white/40 md:flex">
+            <div className="hidden items-center gap-2 text-eyebrow uppercase text-white/40 md:flex">
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/40" />
               <span>{benefits.length} measurable outcomes</span>
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/40" />

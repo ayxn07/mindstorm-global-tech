@@ -29,7 +29,7 @@ export default function FeaturedCapabilities() {
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-border)] to-transparent"
       />
 
-      <div className="relative mx-auto grid w-full items-center gap-10 px-6 py-16 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] md:px-10 md:py-20 lg:gap-10 lg:px-16 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] xl:gap-12 2xl:px-24">
+      <div className="section-pad-x section-pad-y relative mx-auto grid w-full items-center gap-10 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:gap-10 xl:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] xl:gap-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,17 +39,17 @@ export default function FeaturedCapabilities() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               Featured Capabilities
             </span>
           </div>
           <h2
             id="capabilities-heading"
-            className="mt-6 font-heading text-3xl font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-6 font-heading text-h2-fluid font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white "
           >
             Engineering Outcomes, Not Just Deliverables
           </h2>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-white/65 md:text-lg">
+          <p className="mt-5 max-w-xl text-body-lg-fluid leading-relaxed text-white/65">
             A look at the kind of work we ship — secure networks,
             production-grade platforms, learning ecosystems, and always-on
             operations. Each engagement is scoped, staffed, and delivered as one
@@ -75,7 +75,7 @@ export default function FeaturedCapabilities() {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 border-b border-[var(--color-ms-gold)] pb-1 font-heading text-xs uppercase tracking-[0.3em] text-[var(--color-ms-gold)] transition-colors hover:text-white"
+              className="group inline-flex items-center gap-2 border-b border-[var(--color-ms-gold)] pb-1 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] transition-colors hover:text-white"
             >
               Start your engagement
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -88,7 +88,7 @@ export default function FeaturedCapabilities() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-8% 0px" }}
           transition={{ duration: 0.9, ease: [0.22, 0.9, 0.3, 1], delay: 0.1 }}
-          className="relative min-h-[460px] md:min-h-[520px] lg:min-h-[560px] xl:min-h-[600px] 2xl:min-h-[640px]"
+          className="relative min-h-[clamp(28rem,40vw,52rem)]"
         >
           <CardSwap
             width="min(82vw, 1020px)"

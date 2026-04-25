@@ -41,7 +41,7 @@ export default function WhyMetrics() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               The Numbers
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -49,7 +49,7 @@ export default function WhyMetrics() {
 
           <h2
             id="why-metrics-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             What the partnership{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -86,14 +86,14 @@ export default function WhyMetrics() {
                   to={m.to}
                   duration={m.duration}
                   delay={0.2 + i * 0.1}
-                  className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text font-heading text-5xl font-semibold leading-none tracking-tight text-transparent md:text-6xl"
+                  className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text font-heading text-display font-semibold leading-none tracking-tight text-transparent md:text-6xl"
                 />
                 <span className="font-heading text-2xl font-semibold leading-none text-[var(--color-ms-gold)] md:text-3xl">
                   {m.suffix}
                 </span>
               </div>
 
-              <p className="relative mt-5 font-heading text-[11px] uppercase tracking-[0.32em] text-white/85">
+              <p className="relative mt-5 text-eyebrow font-heading uppercase text-white/85">
                 {m.label}
               </p>
               <p className="relative mt-3 text-[13px] leading-relaxed text-white/55">

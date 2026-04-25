@@ -42,7 +42,7 @@ export default function SectionHeader({
           )}
         >
           <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-          <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+          <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
             {eyebrow}
           </span>
           {isCenter ? (
@@ -56,8 +56,8 @@ export default function SectionHeader({
         className={cn(
           "mt-6 font-heading font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white",
           as === "h1"
-            ? "text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl"
-            : "text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl",
+            ? "text-h2-fluid"
+            : "text-h2-fluid",
           titleClassName
         )}
       >

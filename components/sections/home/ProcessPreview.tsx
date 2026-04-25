@@ -31,13 +31,13 @@ export default function ProcessPreview() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-              <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 How We Work
               </span>
             </div>
             <h2
               id="process-heading"
-              className="mt-6 font-heading text-3xl font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+              className="mt-6 font-heading text-h2-fluid font-semibold uppercase leading-[1.1] tracking-[0.015em] text-white "
             >
               A Six-Step Path from Brief to Production
             </h2>
@@ -49,7 +49,7 @@ export default function ProcessPreview() {
 
           <Link
             href="/process"
-            className="group inline-flex shrink-0 items-center gap-2 font-heading text-[12px] uppercase tracking-[0.22em] text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
+            className="group inline-flex shrink-0 items-center gap-2 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] transition-colors hover:text-[var(--color-ms-gold-muted)]"
           >
             <span>See the full process</span>
             <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />

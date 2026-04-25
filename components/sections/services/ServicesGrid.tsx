@@ -37,7 +37,7 @@ export default function ServicesGrid() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               All Services
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -45,7 +45,7 @@ export default function ServicesGrid() {
 
           <h2
             id="services-grid-heading"
-            className="mt-7 font-heading text-4xl font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-5xl md:text-6xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.06] tracking-[0.015em] text-white sm:text-5xl md:text-6xl"
           >
             Full coverage,{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -102,7 +102,7 @@ export default function ServicesGrid() {
                       aria-hidden
                       className="pointer-events-none absolute inset-x-7 top-0 h-px bg-gradient-to-r from-transparent via-[var(--color-ms-gold)]/55 to-transparent"
                     />
-                    <span className="absolute left-7 top-6 font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                    <span className="absolute left-7 top-6 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
@@ -115,7 +115,7 @@ export default function ServicesGrid() {
                       {s.tagline}
                     </p>
 
-                    <div className="mt-6 inline-flex items-center gap-2 self-start font-heading text-[11px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)] transition-colors duration-200 group-hover:text-[#F6E5A6]">
+                    <div className="mt-6 inline-flex items-center gap-2 self-start text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] transition-colors duration-200 group-hover:text-[#F6E5A6]">
                       <span>Explore service</span>
                       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
                     </div>

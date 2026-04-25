@@ -13,7 +13,7 @@ export default function ProcessStages() {
       aria-labelledby="process-stages-heading"
       className="relative w-full overflow-hidden bg-black py-20 md:py-24"
     >
-      <div className="relative w-full px-6 md:px-10 lg:px-16 2xl:px-24">
+      <div className="relative w-full section-pad-x">
         <motion.div
           initial={{ opacity: 0, y: 22 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export default function ProcessStages() {
         >
           <div className="flex items-center gap-3">
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-            <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+            <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
               The Stages
             </span>
             <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -31,7 +31,7 @@ export default function ProcessStages() {
 
           <h2
             id="process-stages-heading"
-            className="mt-7 font-heading text-3xl font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white sm:text-4xl md:text-5xl"
+            className="mt-7 font-heading text-h2-fluid font-semibold uppercase leading-[1.08] tracking-[0.015em] text-white "
           >
             Six stages, one programme —{" "}
             <span className="bg-gradient-to-b from-[var(--color-ms-gold)] via-[#F6E5A6] to-[var(--color-ms-gold-muted)] bg-clip-text text-transparent">
@@ -76,17 +76,17 @@ export default function ProcessStages() {
                       className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-black/70 via-black/20 to-transparent"
                     />
                     <div className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-[rgba(215,191,94,0.45)] bg-black/65 px-3 py-1.5 backdrop-blur-md">
-                      <span className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                      <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                         Stage {s.step}
                       </span>
                     </div>
                     <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-4">
-                      <span className="font-heading text-xs uppercase tracking-[0.28em] text-white/85">
+                      <span className="text-eyebrow font-heading uppercase text-white/85">
                         {s.shortTitle}
                       </span>
                       <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/55 px-2.5 py-1 backdrop-blur-md">
                         <Clock className="h-3 w-3 text-[var(--color-ms-gold)]" />
-                        <span className="font-heading text-[10px] uppercase tracking-[0.28em] text-white/75">
+                        <span className="text-eyebrow font-heading uppercase text-white/75">
                           {s.duration}
                         </span>
                       </span>
@@ -102,7 +102,7 @@ export default function ProcessStages() {
                   className="lg:col-span-6"
                 >
                   <div className="flex items-center gap-4">
-                    <span className="font-heading text-5xl font-semibold leading-none text-[var(--color-ms-gold)] md:text-6xl">
+                    <span className="font-heading text-display font-semibold leading-none text-[var(--color-ms-gold)] md:text-6xl">
                       {s.step}
                     </span>
                     <span
@@ -121,7 +121,7 @@ export default function ProcessStages() {
 
                   <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
                     <div>
-                      <p className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                      <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                         Outcomes
                       </p>
                       <ul className="mt-4 space-y-2.5">
@@ -137,7 +137,7 @@ export default function ProcessStages() {
                       </ul>
                     </div>
                     <div>
-                      <p className="font-heading text-[10px] uppercase tracking-[0.32em] text-[var(--color-ms-gold)]">
+                      <p className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                         Artefacts
                       </p>
                       <ul className="mt-4 space-y-2.5">

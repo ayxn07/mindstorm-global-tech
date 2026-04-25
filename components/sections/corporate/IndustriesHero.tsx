@@ -87,7 +87,7 @@ export default function IndustriesHero() {
           >
             <div className="flex items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
-              <span className="font-heading text-[11px] uppercase tracking-[0.36em] text-[var(--color-ms-gold)]">
+              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
                 Industries We Serve
               </span>
               <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]" />
@@ -95,7 +95,7 @@ export default function IndustriesHero() {
 
             <h1
               id="industries-hero-heading"
-              className="mt-8 font-heading text-4xl font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-5xl md:text-6xl 2xl:text-7xl"
+              className="mt-8 font-heading text-h2-fluid font-semibold uppercase leading-[1.05] tracking-[0.015em] text-white sm:text-display"
             >
               Technology That Works
               <br className="hidden md:block" />{" "}
@@ -114,14 +114,14 @@ export default function IndustriesHero() {
             <div className="pointer-events-auto mt-10 flex flex-wrap items-center justify-center gap-5">
               <Link
                 href="#industries-list"
-                className="group inline-flex items-center gap-2 rounded-full border border-[var(--color-ms-gold)] bg-black/40 px-6 py-3 font-heading text-[12px] uppercase tracking-[0.28em] text-[var(--color-ms-gold)] backdrop-blur-sm transition-colors hover:bg-[var(--color-ms-gold)] hover:text-black"
+                className="group inline-flex items-center gap-2 rounded-full border border-[var(--color-ms-gold)] bg-black/40 px-6 py-3 text-eyebrow font-heading uppercase text-[var(--color-ms-gold)] backdrop-blur-sm transition-colors hover:bg-[var(--color-ms-gold)] hover:text-black"
               >
                 Explore Sectors
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/contact"
-                className="group/ghost inline-flex items-center gap-2 border-b border-white/25 pb-1 font-heading text-[12px] uppercase tracking-[0.28em] text-white/85 transition-colors hover:border-[var(--color-ms-gold)] hover:text-[var(--color-ms-gold)]"
+                className="group/ghost inline-flex items-center gap-2 border-b border-white/25 pb-1 text-eyebrow font-heading uppercase text-white/85 transition-colors hover:border-[var(--color-ms-gold)] hover:text-[var(--color-ms-gold)]"
               >
                 <span>Talk to a specialist</span>
                 <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover/ghost:translate-x-1" />
@@ -136,7 +136,7 @@ export default function IndustriesHero() {
             className="absolute bottom-10 left-1/2 -translate-x-1/2"
           >
             <div className="flex flex-col items-center gap-2 text-white/40">
-              <span className="font-heading text-[10px] uppercase tracking-[0.32em]">
+              <span className="text-eyebrow font-heading uppercase">
                 Scroll
               </span>
               <ChevronDown className="h-4 w-4 animate-bounce" />
