@@ -95,7 +95,7 @@ export default function HomeHero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[var(--color-ms-black)]"
       />
 
-      <div className="section-pad-x relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(520px,720px)] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_minmax(640px,860px)] xl:gap-12 2xl:grid-cols-[minmax(0,1fr)_minmax(720px,980px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1fr)_minmax(820px,1120px)] 4xl:grid-cols-[minmax(0,1fr)_minmax(960px,1320px)] min-h-[calc(100svh-6rem)]">
+      <div className="section-pad-x relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(520px,720px)] lg:gap-10 xl:grid-cols-[minmax(0,1.1fr)_minmax(640px,860px)] xl:gap-12 2xl:grid-cols-[minmax(0,1.15fr)_minmax(720px,980px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1.2fr)_minmax(820px,1120px)] 4xl:grid-cols-[minmax(0,1.25fr)_minmax(960px,1320px)] min-h-[calc(100svh-6rem)]">
         <div className="flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -121,7 +121,7 @@ export default function HomeHero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.08, ease: [0.22, 0.9, 0.3, 1] }}
-              className="text-body-lg-fluid mt-7 flex flex-wrap items-baseline gap-x-3 font-heading uppercase tracking-[0.1em] text-white/75"
+              className="text-body-lg-fluid mt-7 flex max-w-[42ch] flex-wrap items-baseline gap-x-3 font-heading uppercase tracking-[0.1em] text-white/75 2xl:max-w-[52ch] 3xl:max-w-[60ch] 4xl:max-w-[72ch]"
             >
               <motion.span
                 layout="position"
@@ -151,14 +151,14 @@ export default function HomeHero() {
             to={{ opacity: 1, y: 0 }}
             ease="power3.out"
             textAlign="left"
-            className="text-display mt-6 max-w-[18ch] font-heading font-semibold uppercase tracking-[0.015em] text-white [overflow-wrap:break-word] [word-break:break-word]"
+            className="text-display mt-6 w-full max-w-[28ch] 2xl:max-w-[32ch] 3xl:max-w-[36ch] 4xl:max-w-[42ch] font-heading font-semibold uppercase tracking-[0.015em] text-white [overflow-wrap:break-word]"
           />
 
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 0.9, 0.3, 1] }}
-            className="text-body-lg-fluid mt-6 max-w-xl text-white/65"
+            className="text-body-lg-fluid mt-6 max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl 4xl:max-w-4xl text-white/65"
           >
             {pages.home.heroSub}
           </motion.p>
