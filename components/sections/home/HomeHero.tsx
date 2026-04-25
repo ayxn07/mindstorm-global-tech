@@ -258,7 +258,7 @@ export default function HomeHero() {
               </span>
             </div>
 
-            <div className="absolute inset-x-4 bottom-4 grid grid-cols-3 gap-3 rounded-xl border border-[var(--color-ms-border)] bg-black/70 p-4 backdrop-blur-2xl md:inset-x-5 md:bottom-5">
+            <div className="absolute inset-x-4 bottom-4 hidden grid-cols-3 gap-3 rounded-xl border border-[var(--color-ms-border)] bg-black/70 p-4 backdrop-blur-2xl md:inset-x-5 md:bottom-5 md:grid">
               {homeStats.map((s) => (
                 <div key={s.label}>
                   <p className="flex items-baseline font-heading text-2xl text-[var(--color-ms-gold)] md:text-3xl">

@@ -381,12 +381,12 @@ export default function MobileMenu({ open, onClose }: Props) {
 
               <motion.div
                 variants={itemVariants}
-                className="mt-auto pt-12"
+                className="mt-auto flex flex-col items-center pt-12"
               >
                 <Link
                   href="/contact"
                   onClick={onClose}
-                  className="relative flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-black bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_8px_18px_-6px_rgba(0,0,0,0.65),0_0_0_1px_rgba(215,191,94,0.65),0_0_24px_-8px_rgba(215,191,94,0.45)]"
+                  className="relative inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 font-heading text-[11px] uppercase tracking-[0.18em] text-black bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_8px_18px_-6px_rgba(0,0,0,0.65),0_0_0_1px_rgba(215,191,94,0.65),0_0_24px_-8px_rgba(215,191,94,0.45)]"
                 >
                   Get Free Consultation
                   <span aria-hidden>→</span>
