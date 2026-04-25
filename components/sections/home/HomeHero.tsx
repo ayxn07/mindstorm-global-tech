@@ -95,7 +95,7 @@ export default function HomeHero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[var(--color-ms-black)]"
       />
 
-      <div className="section-pad-x relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(380px,520px)] lg:gap-10 xl:grid-cols-[minmax(0,1.3fr)_minmax(440px,620px)] xl:gap-12 2xl:grid-cols-[minmax(0,1.25fr)_minmax(560px,820px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1.25fr)_minmax(720px,1020px)] 4xl:grid-cols-[minmax(0,1.3fr)_minmax(840px,1200px)] min-h-[calc(100svh-6rem)]">
+      <div className="section-pad-x relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(420px,560px)] lg:gap-10 xl:grid-cols-[minmax(0,1fr)_minmax(480px,660px)] xl:gap-12 2xl:grid-cols-[minmax(0,1fr)_minmax(580px,840px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1fr)_minmax(720px,1020px)] 4xl:grid-cols-[minmax(0,1.1fr)_minmax(840px,1200px)] min-h-[calc(100svh-6rem)]">
         <div className="flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 12 }}

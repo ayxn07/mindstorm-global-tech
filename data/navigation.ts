@@ -47,7 +47,6 @@ export const mainNav: NavItem[] = [
   { label: "Industries", href: "/industries" },
   { label: "Process", href: "/process" },
   { label: "Why Us", href: "/why-choose-us" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export const footerCompany: NavItem[] = [
