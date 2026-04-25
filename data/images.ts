@@ -26,7 +26,7 @@ export const images = {
   },
   consultingMeeting: {
     key: "consultingMeeting",
-    src: "/Group-Diss.png",
+    src: "/group-diss.png",
     alt: "Business consulting meeting around a glass conference table",
   },
   hardwareRack: {
