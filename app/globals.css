@@ -25,7 +25,7 @@
   --fs-body-lg: clamp(1.05rem, 0.4vw + 0.95rem, 1.375rem);
   --fs-h3: clamp(1.25rem, 0.7vw + 1rem, 1.875rem);
   --fs-h2: clamp(1.5rem, 1.6vw + 1rem, 3.25rem);
-  --fs-display: clamp(1.875rem, 2.6vw + 1rem, 4.75rem);
+  --fs-display: clamp(1.875rem, 2vw + 0.85rem, 4rem);
   --fs-display-xl: clamp(2.75rem, 4vw + 1rem, 7rem);
 
   --pad-section-x: clamp(1.25rem, 4vw, 6.5rem);
