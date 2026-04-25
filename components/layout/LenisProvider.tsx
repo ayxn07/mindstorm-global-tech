@@ -20,7 +20,14 @@ export default function LenisProvider({ children }: { children: ReactNode }) {
 
     setGlobalLenisActive(true);
 
-    const lenis = new Lenis({ duration: 1.1, smoothWheel: true, syncTouch: false });
+    const lenis = new Lenis({
+      duration: 1.25,
+      easing: (t) => 1 - Math.pow(1 - t, 3),
+      smoothWheel: true,
+      syncTouch: false,
+      wheelMultiplier: 0.95,
+      touchMultiplier: 1.4,
+    });
     lenis.on("scroll", ScrollTrigger.update);
 
     const tick = (time: number) => {

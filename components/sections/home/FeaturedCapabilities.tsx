@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import CardSwap, { Card } from "@/components/CardSwap";
@@ -14,7 +15,43 @@ const capabilityImageKeys = [
   "socDashboard",
 ] as const;
 
+type Tier = "mobile" | "laptop" | "desktop" | "wide";
+
+function useViewportTier(): Tier {
+  const [tier, setTier] = useState<Tier>("desktop");
+  useEffect(() => {
+    const mobile = window.matchMedia("(max-width: 767px)");
+    const laptop = window.matchMedia("(min-width: 768px) and (max-width: 1535px)");
+    const wide = window.matchMedia("(min-width: 1920px)");
+    const update = () => {
+      if (mobile.matches) setTier("mobile");
+      else if (laptop.matches) setTier("laptop");
+      else if (wide.matches) setTier("wide");
+      else setTier("desktop");
+    };
+    update();
+    mobile.addEventListener("change", update);
+    laptop.addEventListener("change", update);
+    wide.addEventListener("change", update);
+    return () => {
+      mobile.removeEventListener("change", update);
+      laptop.removeEventListener("change", update);
+      wide.removeEventListener("change", update);
+    };
+  }, []);
+  return tier;
+}
+
+const cardDims: Record<Tier, { width: string; height: string; cardDistance: number; verticalDistance: number }> = {
+  mobile: { width: "min(82vw, 460px)", height: "min(96vw, 540px)", cardDistance: 56, verticalDistance: 60 },
+  laptop: { width: "min(40vw, 560px)", height: "min(28vw, 380px)", cardDistance: 56, verticalDistance: 60 },
+  desktop: { width: "min(46vw, 820px)", height: "min(32vw, 520px)", cardDistance: 68, verticalDistance: 72 },
+  wide: { width: "min(48vw, 1020px)", height: "min(34vw, 620px)", cardDistance: 72, verticalDistance: 78 },
+};
+
 export default function FeaturedCapabilities() {
+  const tier = useViewportTier();
+  const dims = cardDims[tier];
   return (
     <section
       aria-labelledby="capabilities-heading"
@@ -91,10 +128,11 @@ export default function FeaturedCapabilities() {
           className="relative min-h-[18rem] sm:min-h-[22rem] md:min-h-[clamp(28rem,40vw,52rem)]"
         >
           <CardSwap
-            width="min(82vw, 1020px)"
-            height="min(52vw, 620px)"
-            cardDistance={72}
-            verticalDistance={78}
+            key={tier}
+            width={dims.width}
+            height={dims.height}
+            cardDistance={dims.cardDistance}
+            verticalDistance={dims.verticalDistance}
             delay={4500}
             pauseOnHover
             skewAmount={5}
