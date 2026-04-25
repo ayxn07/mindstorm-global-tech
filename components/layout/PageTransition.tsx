@@ -19,12 +19,6 @@ export default function PageTransition() {
   const { setActive } = useVault();
   const [phase, setPhase] = useState<Phase>("idle");
   const pendingHref = useRef<string | null>(null);
-  const captionVariants = {
-    idle: "",
-    closing: "Sealing channel",
-    settled: "Authenticating",
-    opening: "Welcome",
-  } as const;
 
   useEffect(() => {
     setActive(phase !== "idle");
@@ -112,23 +106,6 @@ export default function PageTransition() {
           className="fixed inset-0 z-[150]"
         >
           <VaultDoor stage={stage} speed={TRANSITION_SPEED} />
-
-          <motion.div
-            className="pointer-events-none absolute inset-x-0 bottom-14 z-40 flex flex-col items-center gap-2.5"
-            animate={{ opacity: phase === "opening" ? 0 : 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="flex items-center gap-3">
-              <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/70" />
-              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
-                Mindstorm · Tech Global
-              </span>
-              <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/70" />
-            </div>
-            <div className="text-eyebrow font-heading uppercase text-white/55">
-              {captionVariants[phase]}
-            </div>
-          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

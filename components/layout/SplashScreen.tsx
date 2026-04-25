@@ -63,41 +63,6 @@ export default function SplashScreen() {
           className="fixed inset-0 z-[200]"
         >
           <VaultDoor stage={stage} speed={1} />
-
-          <motion.div
-            className="pointer-events-none absolute inset-x-0 bottom-14 z-40 flex flex-col items-center gap-2.5"
-            animate={{
-              opacity: stage === "opening" ? 0 : 1,
-            }}
-            transition={{ duration: 0.5 }}
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4 }}
-              className="flex items-center gap-3"
-            >
-              <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/70" />
-              <span className="text-eyebrow font-heading uppercase text-[var(--color-ms-gold)]">
-                Mindstorm · Tech Global
-              </span>
-              <span aria-hidden className="h-px w-10 bg-[var(--color-ms-gold)]/70" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: stage === "locked" ? 0.5 : 0.85,
-              }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="text-eyebrow font-heading uppercase text-white/50"
-            >
-              {stage === "locked"
-                ? "Verifying credentials"
-                : stage === "unlocking"
-                  ? "Releasing locks · Authorised"
-                  : "Welcome"}
-            </motion.div>
-          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

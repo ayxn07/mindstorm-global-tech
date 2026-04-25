@@ -95,7 +95,7 @@ export default function HomeHero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[var(--color-ms-black)]"
       />
 
-      <div className="section-pad-x relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(520px,720px)] lg:gap-10 xl:grid-cols-[minmax(0,1.1fr)_minmax(640px,860px)] xl:gap-12 2xl:grid-cols-[minmax(0,1.15fr)_minmax(720px,980px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1.2fr)_minmax(820px,1120px)] 4xl:grid-cols-[minmax(0,1.25fr)_minmax(960px,1320px)] min-h-[calc(100svh-6rem)]">
+      <div className="section-pad-x relative grid w-full grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(500px,720px)] lg:gap-10 xl:grid-cols-[minmax(0,1.15fr)_minmax(600px,840px)] xl:gap-12 2xl:grid-cols-[minmax(0,1.2fr)_minmax(680px,960px)] 2xl:gap-14 3xl:grid-cols-[minmax(0,1.25fr)_minmax(760px,1080px)] 4xl:grid-cols-[minmax(0,1.3fr)_minmax(880px,1240px)] min-h-[calc(100svh-6rem)]">
         <div className="flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -121,7 +121,7 @@ export default function HomeHero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.08, ease: [0.22, 0.9, 0.3, 1] }}
-              className="text-body-lg-fluid mt-7 flex max-w-[42ch] flex-wrap items-baseline gap-x-3 font-heading uppercase tracking-[0.1em] text-white/75 2xl:max-w-[52ch] 3xl:max-w-[60ch] 4xl:max-w-[72ch]"
+              className="text-body-lg-fluid mt-7 flex max-w-[58ch] flex-wrap items-baseline gap-x-3 font-heading uppercase tracking-[0.1em] text-white/75 2xl:max-w-[72ch] 3xl:max-w-[84ch] 4xl:max-w-[96ch]"
             >
               <motion.span
                 layout="position"
@@ -172,7 +172,7 @@ export default function HomeHero() {
             <Link
               href="/contact"
               aria-label="Get Free Consultation"
-              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-[var(--color-ms-black)] bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
+              className="relative inline-flex select-none items-center justify-center gap-2 rounded-full px-7 py-3 font-heading text-[var(--fs-eyebrow)] uppercase tracking-[0.22em] text-black bg-[linear-gradient(180deg,#EBD78A_0%,#D7BF5E_48%,#B89E4C_100%)] shadow-[inset_0_1px_0_rgba(255,255,255,0.55),inset_0_-2px_3px_rgba(121,107,56,0.5),0_6px_14px_-4px_rgba(0,0,0,0.55),0_0_0_1px_rgba(215,191,94,0.75),0_0_22px_-6px_rgba(215,191,94,0.35)] transition-[transform,box-shadow,filter] duration-200 ease-out will-change-transform hover:-translate-y-[1.5px] hover:brightness-[1.06] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_-2px_3px_rgba(121,107,56,0.45),0_10px_22px_-4px_rgba(0,0,0,0.6),0_0_0_1px_rgba(215,191,94,0.9),0_0_32px_-6px_rgba(215,191,94,0.55)] active:translate-y-0 active:brightness-[0.95] active:shadow-[inset_0_2px_4px_rgba(121,107,56,0.55),inset_0_-1px_0_rgba(255,255,255,0.15),0_3px_8px_-3px_rgba(0,0,0,0.5),0_0_0_1px_rgba(215,191,94,0.75)]"
             >
               Get Free Consultation
               <ArrowRight className="h-3.5 w-3.5" />
