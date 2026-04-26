@@ -127,7 +127,7 @@ export default function Header() {
 
           <nav
             aria-label="Primary"
-            className="pointer-events-auto  hidden items-center gap-0.5 lg:flex xl:ml-8 xl:gap-1 2xl:ml-50 3xl:ml-60"
+            className="pointer-events-auto  hidden items-center gap-0.5 lg:flex xl:ml-8 xl:gap-1 2xl:ml-35 3xl:ml-35"
           >
             {mainNav.map((item) => {
               if (item.children?.length) {
