@@ -2,8 +2,9 @@
 
 import { useState, type FormEvent } from "react";
 import { motion } from "motion/react";
-import { ArrowRight, CheckCircle2, Loader2, Mail, MapPin, Phone, Clock, Building2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Loader2, Mail, MapPin, Phone, Clock, Building2, AlertCircle } from "lucide-react";
 import { site, contactServices, type ContactService } from "@/data/site";
+import { getSupabaseBrowser } from "@/lib/supabase";
 
 type FormState = {
   name: string;
@@ -25,37 +26,48 @@ const emptyForm: FormState = {
 
 export default function ContactSplit() {
   const [form, setForm] = useState<FormState>(emptyForm);
-  const [status, setStatus] = useState<"idle" | "submitting" | "sent">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">(
+    "idle",
+  );
+  const [reference, setReference] = useState<string | null>(null);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleChange = (field: keyof FormState) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
       setForm((prev) => ({ ...prev, [field]: e.target.value }));
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (status === "submitting") return;
     setStatus("submitting");
+    setErrorMsg(null);
 
-    const subject = encodeURIComponent(
-      `Enquiry from ${form.name || "website"}${form.service ? ` — ${form.service}` : ""}`,
-    );
-    const body = encodeURIComponent(
-      [
-        `Name: ${form.name}`,
-        `Email: ${form.email}`,
-        `Phone: ${form.phone || "—"}`,
-        `Company: ${form.company || "—"}`,
-        `Service: ${form.service || "General"}`,
-        "",
-        "Message:",
-        form.message,
-      ].join("\n"),
-    );
+    try {
+      const supabase = getSupabaseBrowser();
+      const { data, error } = await supabase
+        .from("contact_enquiries")
+        .insert({
+          source: "tech",
+          full_name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim() || null,
+          company: form.company.trim() || null,
+          service: form.service || null,
+          message: form.message.trim(),
+        })
+        .select("reference")
+        .single();
 
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
-
-    setTimeout(() => {
+      if (error) throw error;
+      setReference(data?.reference ?? null);
       setStatus("sent");
-    }, 600);
+      setForm(emptyForm);
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(
+        err instanceof Error ? err.message : "Couldn't send your brief.",
+      );
+    }
   };
 
   return (
@@ -203,6 +215,27 @@ export default function ContactSplit() {
               </Field>
             </div>
 
+            {status === "sent" && reference ? (
+              <div className="mt-6 flex items-start gap-3 rounded-xl border border-[rgba(215,191,94,0.35)] bg-[rgba(215,191,94,0.06)] px-4 py-3 text-sm text-white/85">
+                <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-ms-gold)]" />
+                <div>
+                  <p>
+                    Brief received. Reference{" "}
+                    <span className="font-mono font-semibold text-[var(--color-ms-gold)]">
+                      {reference}
+                    </span>
+                    . A senior engineer will reply within one business day.
+                  </p>
+                </div>
+              </div>
+            ) : null}
+            {status === "error" ? (
+              <div className="mt-6 flex items-start gap-3 rounded-xl border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-100">
+                <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
+                <p>{errorMsg ?? "Something went wrong. Please try again."}</p>
+              </div>
+            ) : null}
+
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-[12px] leading-relaxed text-white/50">
                 We treat briefs as confidential. NDAs available on request.
@@ -219,7 +252,7 @@ export default function ContactSplit() {
                   </>
                 ) : status === "sent" ? (
                   <>
-                    Mail Drafted
+                    Brief Sent
                     <CheckCircle2 className="h-3.5 w-3.5" />
                   </>
                 ) : (
