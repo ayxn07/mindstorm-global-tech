@@ -7,7 +7,7 @@ export const site: CompanyInfo = {
     "Smart IT Infrastructure. Secure Networks. Scalable Digital Solutions.",
   description:
     "A technology-driven MSME delivering end-to-end IT, software, CCNA-based networking, cybersecurity, managed IT, HR technology, and education technology solutions for modern enterprises and institutions.",
-  email: "hr@mindstormglobal.com",
+  email: "sales@mindstormtechglobal.com",
   phone: "+917814806077",
   phoneDisplay: "+91 78148 06077",
   address: {
